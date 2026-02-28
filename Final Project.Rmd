@@ -1,0 +1,222 @@
+---
+title: "Shinyapp_"
+author: "Zirui Zheng"
+date: "2026-02-28"
+output: html_document
+---
+
+```{r}
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+library(leaflet)
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+
+```
+
+```{r}
+
+capture <- read.csv("Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
+  na.strings = c("", " ")
+)
+
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+
+# -------- LOAD CAPTURE DATA --------
+capture_raw <- read.csv(
+  "Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
+  na.strings = c("", " ")
+)
+
+
+# Convert to proper types
+capture_raw$Region <- as.factor(capture_raw$Region)
+capture_raw$Sex <- as.factor(capture_raw$Sex)
+capture_raw$Ageclass <- as.factor(capture_raw$Ageclass)
+capture_raw$Reproductivestatus <- as.factor(capture_raw$Reproductivestatus)
+
+# Remove NA in variables of interest
+capture_clean <- capture_raw %>%
+  filter(
+    !is.na(Region),
+    !is.na(Sex),
+    !is.na(Ageclass),
+    !is.na(Reproductivestatus),
+    !is.na(Forearmlengthmm),
+    !is.na(Earlengthmm)
+  )
+
+# -------- REMOVE EAR LENGTH OUTLIERS (IQR method) --------
+Q3 <- quantile(capture_clean$Earlengthmm, 0.75)
+IQR_val <- IQR(capture_clean$Earlengthmm)
+
+upper_bound <- Q3 + 1.5 * IQR_val
+
+capture <- capture_clean %>%
+  filter(Earlengthmm <= upper_bound)
+
+# Convert categorical variables
+capture$Region <- as.factor(capture$Region)
+capture$Sex <- as.factor(capture$Sex)
+capture$Ageclass <- as.factor(capture$Ageclass)
+capture$Reproductivestatus <- as.factor(capture$Reproductivestatus)
+
+ui <- dashboardPage(
+  dashboardHeader(title = "Capture Morphology Analysis"),
+  
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Forearm Analysis", tabName = "forearm"),
+      menuItem("Ear Analysis", tabName = "ear"),
+      menuItem("Morphological Scaling", tabName = "scaling"),
+      menuItem("Categorical Associations", tabName = "cat")
+    )
+  ),
+  
+  dashboardBody(
+    tabItems(
+      # -------- FOREARM TAB --------
+      tabItem(tabName = "forearm",
+        fluidRow(
+          box(width = 4,
+              selectInput("forearm_x",
+                          "Group Variable",
+                          choices = c("Sex",
+                                      "Ageclass",
+                                      "Region",
+                                      "Reproductivestatus"))
+          ),
+          box(width = 8,
+              plotOutput("forearm_plot"),
+              verbatimTextOutput("forearm_test")
+          )
+        )
+      ),
+      
+      # -------- EAR TAB --------
+      tabItem(tabName = "ear",
+        fluidRow(
+          box(width = 4,
+              selectInput("ear_x",
+                          "Group Variable",
+                          choices = c("Sex",
+                                      "Ageclass",
+                                      "Region",
+                                      "Reproductivestatus"))
+          ),
+          box(width = 8,
+              plotOutput("ear_plot"),
+              verbatimTextOutput("ear_test")
+          )
+        )
+      ),
+      
+      # -------- SCALING TAB --------
+      tabItem(tabName = "scaling",
+        fluidRow(
+          box(width = 12,
+              plotOutput("scaling_plot"),
+              verbatimTextOutput("scaling_test")
+          )
+        )
+      ),
+      
+      # -------- CATEGORICAL TAB --------
+      tabItem(tabName = "cat",
+        fluidRow(
+          box(width = 4,
+              selectInput("cat1",
+                          "Variable 1",
+                          choices = c("Sex",
+                                      "Ageclass",
+                                      "Region",
+                                      "Reproductivestatus")),
+              selectInput("cat2",
+                          "Variable 2",
+                          choices = c("Sex",
+                                      "Ageclass",
+                                      "Region",
+                                      "Reproductivestatus"))
+          ),
+          box(width = 8,
+              tableOutput("cat_table"),
+              verbatimTextOutput("cat_test")
+          )
+        )
+      )
+    )
+  )
+)
+
+server <- function(input, output) {
+  
+  # -------- FOREARM --------
+  output$forearm_plot <- renderPlot({
+    ggplot(capture,
+           aes_string(x = input$forearm_x,
+                      y = "Forearmlengthmm",
+                      fill = input$forearm_x)) +
+      geom_boxplot() +
+      theme_minimal() +
+      labs(y = "Forearm Length (mm)")
+  })
+  
+  output$forearm_test <- renderPrint({
+    summary(aov(Forearmlengthmm ~
+                capture[[input$forearm_x]],
+                data = capture))
+  })
+  
+  # -------- EAR --------
+  output$ear_plot <- renderPlot({
+    ggplot(capture,
+           aes_string(x = input$ear_x,
+                      y = "Earlengthmm",
+                      fill = input$ear_x)) +
+      geom_boxplot() +
+      theme_minimal() +
+      labs(y = "Ear Length (mm)")
+  })
+  
+  output$ear_test <- renderPrint({
+    summary(aov(Earlengthmm ~
+                capture[[input$ear_x]],
+                data = capture))
+  })
+  
+  # -------- SCALING --------
+  output$scaling_plot <- renderPlot({
+    ggplot(capture,
+           aes(Forearmlengthmm,
+               Earlengthmm)) +
+      geom_point() +
+      geom_smooth(method = "lm",
+                  se = FALSE,
+                  color = "red") +
+      theme_minimal()
+  })
+  
+  output$scaling_test <- renderPrint({
+    summary(lm(Earlengthmm ~ Forearmlengthmm,
+               data = capture))
+  })
+  
+  # -------- CATEGORICAL --------
+  output$cat_table <- renderTable({
+    table(capture[[input$cat1]],
+          capture[[input$cat2]])
+  })
+  
+  output$cat_test <- renderPrint({
+    chisq.test(table(capture[[input$cat1]],
+                     capture[[input$cat2]]))
+  })
+}
+
+shinyApp(ui, server)
+```
+
