@@ -1,0 +1,944 @@
+"site","lat","lon","date","myotis","detector_active","site_type","year","month","doy"
+"NTBP",60.04,-112.73,2011-05-21,16,"Yes","Foraging site","2011",5,141
+"NTBP",60.04,-112.73,2011-05-22,1,"Yes","Foraging site","2011",5,142
+"NTBP",60.04,-112.73,2011-05-23,5,"Yes","Foraging site","2011",5,143
+"NTBP",60.04,-112.73,2011-05-24,1,"Yes","Foraging site","2011",5,144
+"NTBP",60.04,-112.73,2011-05-25,5,"Yes","Foraging site","2011",5,145
+"NTBP",60.04,-112.73,2011-05-26,12,"Yes","Foraging site","2011",5,146
+"NTBP",60.04,-112.73,2011-05-27,0,"Yes","Foraging site","2011",5,147
+"NTBP",60.04,-112.73,2011-05-28,2,"Yes","Foraging site","2011",5,148
+"NTBP",60.04,-112.73,2011-05-29,0,"Yes","Foraging site","2011",5,149
+"NTBP",60.04,-112.73,2011-06-29,1,"Yes","Foraging site","2011",6,180
+"NTBP",60.04,-112.73,2011-06-30,5,"Yes","Foraging site","2011",6,181
+"NTBP",60.04,-112.73,2011-07-01,0,"Yes","Foraging site","2011",7,182
+"NTBP",60.04,-112.73,2011-07-02,0,"Yes","Foraging site","2011",7,183
+"NTBP",60.04,-112.73,2011-07-03,20,"Yes","Foraging site","2011",7,184
+"NTBP",60.04,-112.73,2011-07-14,24,"Yes","Foraging site","2011",7,195
+"NTBP",60.04,-112.73,2011-07-15,2,"Yes","Foraging site","2011",7,196
+"NTBP",60.04,-112.73,2011-07-16,13,"Yes","Foraging site","2011",7,197
+"NTBP",60.04,-112.73,2011-07-17,15,"Yes","Foraging site","2011",7,198
+"NTBP",60.04,-112.73,2011-07-18,26,"Yes","Foraging site","2011",7,199
+"NTBP",60.04,-112.73,2011-07-19,0,"Yes","Foraging site","2011",7,200
+"NTBP",60.04,-112.73,2011-07-26,48,"Yes","Foraging site","2011",7,207
+"NTBP",60.04,-112.73,2011-07-27,83,"Yes","Foraging site","2011",7,208
+"NTBP",60.04,-112.73,2011-07-28,100,"Yes","Foraging site","2011",7,209
+"NTBP",60.04,-112.73,2011-07-29,71,"Yes","Foraging site","2011",7,210
+"NTBP",60.04,-112.73,2011-07-30,50,"Yes","Foraging site","2011",7,211
+"NTBP",60.04,-112.73,2011-07-31,43,"Yes","Foraging site","2011",7,212
+"NTBP",60.04,-112.73,2011-08-01,109,"Yes","Foraging site","2011",8,213
+"NTBP",60.04,-112.73,2011-08-02,43,"Yes","Foraging site","2011",8,214
+"NTBP",60.04,-112.73,2011-08-03,0,"Yes","Foraging site","2011",8,215
+"NTBP",60.04,-112.73,2011-08-14,28,"Yes","Foraging site","2011",8,226
+"NTBP",60.04,-112.73,2011-08-15,301,"Yes","Foraging site","2011",8,227
+"NTBP",60.04,-112.73,2011-08-16,67,"Yes","Foraging site","2011",8,228
+"NTBP",60.04,-112.73,2011-08-17,0,"Yes","Foraging site","2011",8,229
+"NTBP",60.04,-112.73,2011-08-30,0,"Yes","Foraging site","2011",8,242
+"NTBP",60.04,-112.73,2011-08-31,3,"Yes","Foraging site","2011",8,243
+"NTBP",60.04,-112.73,2011-09-01,2,"Yes","Foraging site","2011",9,244
+"NTBP",60.04,-112.73,2011-09-02,0,"Yes","Foraging site","2011",9,245
+"NTBP",60.04,-112.73,2011-09-08,0,"Yes","Foraging site","2011",9,251
+"NTBP",60.04,-112.73,2011-09-09,0,"Yes","Foraging site","2011",9,252
+"NTBP",60.04,-112.73,2011-09-10,0,"Yes","Foraging site","2011",9,253
+"NTBP",60.04,-112.73,2011-09-11,0,"Yes","Foraging site","2011",9,254
+"NTBP",60.04,-112.73,2011-09-12,0,"Yes","Foraging site","2011",9,255
+"NTBP",60.04,-112.73,2011-09-13,0,"Yes","Foraging site","2011",9,256
+"NTBP",60.04,-112.73,2011-09-14,0,"Yes","Foraging site","2011",9,257
+"NTBP",60.04,-112.73,2011-09-15,0,"Yes","Foraging site","2011",9,258
+"NTBP",60.04,-112.73,2011-09-16,0,"Yes","Foraging site","2011",9,259
+"NTBP",60.04,-112.73,2011-09-17,0,"Yes","Foraging site","2011",9,260
+"NTBP",60.04,-112.73,2011-09-18,0,"Yes","Foraging site","2011",9,261
+"NTBP",60.04,-112.73,2011-09-19,0,"Yes","Foraging site","2011",9,262
+"NTBP",60.04,-112.73,2011-09-20,0,"Yes","Foraging site","2011",9,263
+"NTBP",60.04,-112.73,2011-09-21,0,"Yes","Foraging site","2011",9,264
+"NTBP",60.04,-112.73,2011-09-22,0,"Yes","Foraging site","2011",9,265
+"NTBP",60.04,-112.73,2011-09-23,0,"Yes","Foraging site","2011",9,266
+"NTBP",60.04,-112.73,2011-09-24,0,"Yes","Foraging site","2011",9,267
+"NTBP",60.04,-112.73,2011-09-25,0,"Yes","Foraging site","2011",9,268
+"NTBP",60.04,-112.73,2011-09-26,0,"Yes","Foraging site","2011",9,269
+"NTBP",60.04,-112.73,2011-09-27,0,"Yes","Foraging site","2011",9,270
+"NTBP",60.04,-112.73,2011-09-28,0,"Yes","Foraging site","2011",9,271
+"NTBP",60.04,-112.73,2011-09-29,0,"Yes","Foraging site","2011",9,272
+"NTBP",60.04,-112.73,2011-09-30,0,"Yes","Foraging site","2011",9,273
+"NTBP",60.04,-112.73,2011-10-01,0,"Yes","Foraging site","2011",10,274
+"NTBP",60.04,-112.73,2011-10-02,0,"Yes","Foraging site","2011",10,275
+"NTBP",60.04,-112.73,2011-10-03,0,"Yes","Foraging site","2011",10,276
+"NTBP",60.04,-112.73,2011-10-04,0,"Yes","Foraging site","2011",10,277
+"NTBP",60.04,-112.73,2011-10-05,0,"Yes","Foraging site","2011",10,278
+"SSR-1",60.1,-112.8,2012-03-30,1,"Yes","Hibernaculum","2012",3,90
+"SSR-1",60.1,-112.8,2012-03-31,19,"Yes","Hibernaculum","2012",3,91
+"SSR-1",60.1,-112.8,2012-04-01,21,"Yes","Hibernaculum","2012",4,92
+"SSR-1",60.1,-112.8,2012-04-02,0,"Yes","Hibernaculum","2012",4,93
+"SSR-1",60.1,-112.8,2012-04-03,3,"Yes","Hibernaculum","2012",4,94
+"SSR-1",60.1,-112.8,2012-04-04,0,"Yes","Hibernaculum","2012",4,95
+"SSR-1",60.1,-112.8,2012-04-05,0,"Yes","Hibernaculum","2012",4,96
+"SSR-1",60.1,-112.8,2012-04-06,2,"Yes","Hibernaculum","2012",4,97
+"SSR-1",60.1,-112.8,2012-04-07,0,"Yes","Hibernaculum","2012",4,98
+"SSR-1",60.1,-112.8,2012-04-08,0,"Yes","Hibernaculum","2012",4,99
+"SSR-1",60.1,-112.8,2012-04-09,0,"Yes","Hibernaculum","2012",4,100
+"SSR-1",60.1,-112.8,2012-04-10,0,"Yes","Hibernaculum","2012",4,101
+"SSR-1",60.1,-112.8,2012-04-11,25,"Yes","Hibernaculum","2012",4,102
+"SSR-1",60.1,-112.8,2012-04-12,8,"Yes","Hibernaculum","2012",4,103
+"SSR-1",60.1,-112.8,2012-04-13,7,"Yes","Hibernaculum","2012",4,104
+"SSR-1",60.1,-112.8,2012-04-14,1,"Yes","Hibernaculum","2012",4,105
+"SSR-1",60.1,-112.8,2012-04-15,1,"Yes","Hibernaculum","2012",4,106
+"SSR-1",60.1,-112.8,2012-04-16,2,"Yes","Hibernaculum","2012",4,107
+"SSR-1",60.1,-112.8,2012-04-17,1,"Yes","Hibernaculum","2012",4,108
+"SSR-1",60.1,-112.8,2012-04-18,6,"Yes","Hibernaculum","2012",4,109
+"SSR-1",60.1,-112.8,2012-04-19,142,"Yes","Hibernaculum","2012",4,110
+"SSR-1",60.1,-112.8,2012-04-20,216,"Yes","Hibernaculum","2012",4,111
+"SSR-1",60.1,-112.8,2012-04-21,318,"Yes","Hibernaculum","2012",4,112
+"SSR-1",60.1,-112.8,2012-04-22,142,"Yes","Hibernaculum","2012",4,113
+"SSR-1",60.1,-112.8,2012-04-23,1,"Yes","Hibernaculum","2012",4,114
+"SSR-1",60.1,-112.8,2012-04-24,5,"Yes","Hibernaculum","2012",4,115
+"SSR-1",60.1,-112.8,2012-04-25,9,"Yes","Hibernaculum","2012",4,116
+"SSR-1",60.1,-112.8,2012-04-26,530,"Yes","Hibernaculum","2012",4,117
+"SSR-1",60.1,-112.8,2012-04-27,359,"Yes","Hibernaculum","2012",4,118
+"SSR-1",60.1,-112.8,2012-04-28,286,"Yes","Hibernaculum","2012",4,119
+"SSR-1",60.1,-112.8,2012-04-29,489,"Yes","Hibernaculum","2012",4,120
+"SSR-1",60.1,-112.8,2012-04-30,391,"Yes","Hibernaculum","2012",4,121
+"SSR-1",60.1,-112.8,2012-05-01,497,"Yes","Hibernaculum","2012",5,122
+"SSR-1",60.1,-112.8,2012-05-02,508,"Yes","Hibernaculum","2012",5,123
+"SSR-1",60.1,-112.8,2012-05-03,707,"Yes","Hibernaculum","2012",5,124
+"SSR-1",60.1,-112.8,2012-05-04,629,"Yes","Hibernaculum","2012",5,125
+"SSR-1",60.1,-112.8,2012-05-05,456,"Yes","Hibernaculum","2012",5,126
+"SSR-1",60.1,-112.8,2012-05-06,360,"Yes","Hibernaculum","2012",5,127
+"SSR-1",60.1,-112.8,2012-05-07,533,"Yes","Hibernaculum","2012",5,128
+"SSR-1",60.1,-112.8,2012-05-08,567,"Yes","Hibernaculum","2012",5,129
+"SSR-1",60.1,-112.8,2012-05-09,435,"Yes","Hibernaculum","2012",5,130
+"SSR-1",60.1,-112.8,2012-05-10,204,"Yes","Hibernaculum","2012",5,131
+"SSR-1",60.1,-112.8,2012-05-11,373,"Yes","Hibernaculum","2012",5,132
+"SSR-1",60.1,-112.8,2012-05-12,91,"Yes","Hibernaculum","2012",5,133
+"SSR-1",60.1,-112.8,2012-05-13,286,"Yes","Hibernaculum","2012",5,134
+"SSR-1",60.1,-112.8,2012-05-14,187,"Yes","Hibernaculum","2012",5,135
+"SSR-1",60.1,-112.8,2012-05-15,1107,"Yes","Hibernaculum","2012",5,136
+"SSR-1",60.1,-112.8,2012-05-16,725,"Yes","Hibernaculum","2012",5,137
+"SSR-1",60.1,-112.8,2012-05-17,325,"Yes","Hibernaculum","2012",5,138
+"SSR-1",60.1,-112.8,2012-05-18,268,"Yes","Hibernaculum","2012",5,139
+"SSR-1",60.1,-112.8,2012-05-19,266,"Yes","Hibernaculum","2012",5,140
+"SSR-1",60.1,-112.8,2012-05-23,479,"Yes","Hibernaculum","2012",5,144
+"SSR-1",60.1,-112.8,2012-05-24,283,"Yes","Hibernaculum","2012",5,145
+"SSR-1",60.1,-112.8,2012-05-25,440,"Yes","Hibernaculum","2012",5,146
+"SSR-1",60.1,-112.8,2012-05-26,442,"Yes","Hibernaculum","2012",5,147
+"SSR-1",60.1,-112.8,2012-05-27,574,"Yes","Hibernaculum","2012",5,148
+"SSR-1",60.1,-112.8,2012-05-28,627,"Yes","Hibernaculum","2012",5,149
+"SSR-1",60.1,-112.8,2012-05-29,558,"Yes","Hibernaculum","2012",5,150
+"SSR-1",60.1,-112.8,2012-05-30,583,"Yes","Hibernaculum","2012",5,151
+"SSR-1",60.1,-112.8,2012-05-31,491,"Yes","Hibernaculum","2012",5,152
+"SSR-1",60.1,-112.8,2012-06-01,390,"Yes","Hibernaculum","2012",6,153
+"SSR-1",60.1,-112.8,2012-06-02,557,"Yes","Hibernaculum","2012",6,154
+"SSR-1",60.1,-112.8,2012-06-03,497,"Yes","Hibernaculum","2012",6,155
+"SSR-1",60.1,-112.8,2012-06-04,458,"Yes","Hibernaculum","2012",6,156
+"SSR-1",60.1,-112.8,2012-06-05,451,"Yes","Hibernaculum","2012",6,157
+"SSR-1",60.1,-112.8,2012-06-06,456,"Yes","Hibernaculum","2012",6,158
+"SSR-1",60.1,-112.8,2012-06-07,441,"Yes","Hibernaculum","2012",6,159
+"SSR-1",60.1,-112.8,2012-06-08,489,"Yes","Hibernaculum","2012",6,160
+"SSR-1",60.1,-112.8,2012-06-09,249,"Yes","Hibernaculum","2012",6,161
+"SSR-1",60.1,-112.8,2012-06-10,138,"Yes","Hibernaculum","2012",6,162
+"SSR-1",60.1,-112.8,2012-06-11,234,"Yes","Hibernaculum","2012",6,163
+"SSR-1",60.1,-112.8,2012-06-12,210,"Yes","Hibernaculum","2012",6,164
+"SSR-1",60.1,-112.8,2012-06-13,181,"Yes","Hibernaculum","2012",6,165
+"SSR-1",60.1,-112.8,2012-06-14,189,"Yes","Hibernaculum","2012",6,166
+"SSR-1",60.1,-112.8,2012-06-15,136,"Yes","Hibernaculum","2012",6,167
+"SSR-1",60.1,-112.8,2012-06-16,158,"Yes","Hibernaculum","2012",6,168
+"SSR-1",60.1,-112.8,2012-06-17,0,"Yes","Hibernaculum","2012",6,169
+"SSR-1",60.1,-112.8,2012-06-18,0,"Yes","Hibernaculum","2012",6,170
+"SSR-1",60.1,-112.8,2012-06-19,0,"Yes","Hibernaculum","2012",6,171
+"SSR-1",60.1,-112.8,2012-06-20,0,"Yes","Hibernaculum","2012",6,172
+"SSR-1",60.1,-112.8,2012-06-21,0,"Yes","Hibernaculum","2012",6,173
+"SSR-1",60.1,-112.8,2012-06-22,0,"Yes","Hibernaculum","2012",6,174
+"SSR-1",60.1,-112.8,2012-06-23,0,"Yes","Hibernaculum","2012",6,175
+"SSR-1",60.1,-112.8,2012-06-24,0,"Yes","Hibernaculum","2012",6,176
+"SSR-1",60.1,-112.8,2012-06-25,0,"Yes","Hibernaculum","2012",6,177
+"SSR-1",60.1,-112.8,2012-06-26,0,"Yes","Hibernaculum","2012",6,178
+"SSR-1",60.1,-112.8,2012-06-27,0,"Yes","Hibernaculum","2012",6,179
+"SSR-1",60.1,-112.8,2012-06-28,0,"Yes","Hibernaculum","2012",6,180
+"SSR-1",60.1,-112.8,2012-06-29,0,"Yes","Hibernaculum","2012",6,181
+"SSR-1",60.1,-112.8,2012-07-05,1,"Yes","Hibernaculum","2012",7,187
+"SSR-1",60.1,-112.8,2012-07-06,40,"Yes","Hibernaculum","2012",7,188
+"SSR-1",60.1,-112.8,2012-07-07,41,"Yes","Hibernaculum","2012",7,189
+"SSR-1",60.1,-112.8,2012-07-08,105,"Yes","Hibernaculum","2012",7,190
+"SSR-1",60.1,-112.8,2012-07-09,202,"Yes","Hibernaculum","2012",7,191
+"SSR-1",60.1,-112.8,2012-07-10,126,"Yes","Hibernaculum","2012",7,192
+"SSR-1",60.1,-112.8,2012-07-11,221,"Yes","Hibernaculum","2012",7,193
+"SSR-1",60.1,-112.8,2012-07-12,124,"Yes","Hibernaculum","2012",7,194
+"SSR-1",60.1,-112.8,2012-07-13,149,"Yes","Hibernaculum","2012",7,195
+"SSR-1",60.1,-112.8,2012-07-14,179,"Yes","Hibernaculum","2012",7,196
+"SSR-1",60.1,-112.8,2012-07-15,276,"Yes","Hibernaculum","2012",7,197
+"SSR-1",60.1,-112.8,2012-07-16,312,"Yes","Hibernaculum","2012",7,198
+"SSR-1",60.1,-112.8,2012-07-17,354,"Yes","Hibernaculum","2012",7,199
+"SSR-1",60.1,-112.8,2012-07-18,342,"Yes","Hibernaculum","2012",7,200
+"SSR-1",60.1,-112.8,2012-07-19,407,"Yes","Hibernaculum","2012",7,201
+"SSR-1",60.1,-112.8,2012-07-20,528,"Yes","Hibernaculum","2012",7,202
+"SSR-1",60.1,-112.8,2012-07-21,734,"Yes","Hibernaculum","2012",7,203
+"SSR-1",60.1,-112.8,2012-07-22,704,"Yes","Hibernaculum","2012",7,204
+"SSR-1",60.1,-112.8,2012-07-23,796,"Yes","Hibernaculum","2012",7,205
+"SSR-1",60.1,-112.8,2012-07-24,834,"Yes","Hibernaculum","2012",7,206
+"SSR-1",60.1,-112.8,2012-07-26,815,"Yes","Hibernaculum","2012",7,208
+"SSR-1",60.1,-112.8,2012-07-27,707,"Yes","Hibernaculum","2012",7,209
+"SSR-1",60.1,-112.8,2012-07-28,691,"Yes","Hibernaculum","2012",7,210
+"SSR-1",60.1,-112.8,2012-07-29,759,"Yes","Hibernaculum","2012",7,211
+"SSR-1",60.1,-112.8,2012-07-30,101,"Yes","Hibernaculum","2012",7,212
+"SSR-1",60.1,-112.8,2012-07-31,21,"Yes","Hibernaculum","2012",7,213
+"SSR-1",60.1,-112.8,2012-08-01,138,"Yes","Hibernaculum","2012",8,214
+"SSR-1",60.1,-112.8,2012-08-02,609,"Yes","Hibernaculum","2012",8,215
+"SSR-1",60.1,-112.8,2012-08-03,10,"Yes","Hibernaculum","2012",8,216
+"SSR-1",60.1,-112.8,2012-08-04,11,"Yes","Hibernaculum","2012",8,217
+"SSR-1",60.1,-112.8,2012-08-05,75,"Yes","Hibernaculum","2012",8,218
+"SSR-1",60.1,-112.8,2012-08-06,107,"Yes","Hibernaculum","2012",8,219
+"SSR-1",60.1,-112.8,2012-09-10,27,"Yes","Hibernaculum","2012",9,254
+"SSR-1",60.1,-112.8,2012-09-11,4,"Yes","Hibernaculum","2012",9,255
+"SSR-1",60.1,-112.8,2012-09-12,5,"Yes","Hibernaculum","2012",9,256
+"SSR-1",60.1,-112.8,2012-09-13,48,"Yes","Hibernaculum","2012",9,257
+"SSR-1",60.1,-112.8,2012-09-14,3,"Yes","Hibernaculum","2012",9,258
+"SSR-1",60.1,-112.8,2012-09-15,0,"Yes","Hibernaculum","2012",9,259
+"SSR-1",60.1,-112.8,2012-09-16,3,"Yes","Hibernaculum","2012",9,260
+"SSR-1",60.1,-112.8,2012-09-17,20,"Yes","Hibernaculum","2012",9,261
+"SSR-1",60.1,-112.8,2012-09-18,34,"Yes","Hibernaculum","2012",9,262
+"SSR-1",60.1,-112.8,2012-09-19,3,"Yes","Hibernaculum","2012",9,263
+"SSR-1",60.1,-112.8,2012-09-20,11,"Yes","Hibernaculum","2012",9,264
+"SSR-1",60.1,-112.8,2012-09-21,21,"Yes","Hibernaculum","2012",9,265
+"SSR-1",60.1,-112.8,2012-09-22,60,"Yes","Hibernaculum","2012",9,266
+"SSR-1",60.1,-112.8,2012-09-23,21,"Yes","Hibernaculum","2012",9,267
+"SSR-1",60.1,-112.8,2012-09-24,33,"Yes","Hibernaculum","2012",9,268
+"SSR-1",60.1,-112.8,2012-09-25,42,"Yes","Hibernaculum","2012",9,269
+"SSR-1",60.1,-112.8,2012-09-26,16,"Yes","Hibernaculum","2012",9,270
+"SSR-1",60.1,-112.8,2012-09-27,41,"Yes","Hibernaculum","2012",9,271
+"SSR-1",60.1,-112.8,2012-09-28,41,"Yes","Hibernaculum","2012",9,272
+"SSR-1",60.1,-112.8,2012-09-29,40,"Yes","Hibernaculum","2012",9,273
+"SSR-1",60.1,-112.8,2012-09-30,9,"Yes","Hibernaculum","2012",9,274
+"SSR-1",60.1,-112.8,2012-10-01,0,"Yes","Hibernaculum","2012",10,275
+"SSR-1",60.1,-112.8,2012-10-02,0,"Yes","Hibernaculum","2012",10,276
+"SSR-1",60.1,-112.8,2012-10-03,0,"Yes","Hibernaculum","2012",10,277
+"SSR-1",60.1,-112.8,2012-10-04,14,"Yes","Hibernaculum","2012",10,278
+"SSR-1",60.1,-112.8,2012-10-05,29,"Yes","Hibernaculum","2012",10,279
+"SSR-1",60.1,-112.8,2012-10-06,26,"Yes","Hibernaculum","2012",10,280
+"SSR-1",60.1,-112.8,2012-10-07,4,"Yes","Hibernaculum","2012",10,281
+"SSR-1",60.1,-112.8,2012-10-08,4,"Yes","Hibernaculum","2012",10,282
+"SSR-1",60.1,-112.8,2012-10-09,3,"Yes","Hibernaculum","2012",10,283
+"SSR-1",60.1,-112.8,2012-10-10,0,"Yes","Hibernaculum","2012",10,284
+"SSR-1",60.1,-112.8,2012-10-11,9,"Yes","Hibernaculum","2012",10,285
+"SSR-1",60.1,-112.8,2012-10-12,1,"Yes","Hibernaculum","2012",10,286
+"SSR-1",60.1,-112.8,2012-10-13,9,"Yes","Hibernaculum","2012",10,287
+"SSR-1",60.1,-112.8,2012-10-14,3,"Yes","Hibernaculum","2012",10,288
+"SSR-1",60.1,-112.8,2012-10-15,3,"Yes","Hibernaculum","2012",10,289
+"SSR-1",60.1,-112.8,2012-10-16,1,"Yes","Hibernaculum","2012",10,290
+"SSR-1",60.1,-112.8,2012-10-17,0,"Yes","Hibernaculum","2012",10,291
+"SSR-1",60.1,-112.8,2012-10-18,9,"Yes","Hibernaculum","2012",10,292
+"SSR-1",60.1,-112.8,2012-10-19,4,"Yes","Hibernaculum","2012",10,293
+"SSR-1",60.1,-112.8,2012-10-20,1,"Yes","Hibernaculum","2012",10,294
+"SSR-1",60.1,-112.8,2012-10-21,2,"Yes","Hibernaculum","2012",10,295
+"SSR-1",60.1,-112.8,2012-10-22,0,"Yes","Hibernaculum","2012",10,296
+"SSR-1",60.1,-112.8,2012-10-23,0,"Yes","Hibernaculum","2012",10,297
+"SSR-1",60.1,-112.8,2012-10-24,0,"Yes","Hibernaculum","2012",10,298
+"SSR-1",60.1,-112.8,2012-10-25,0,"Yes","Hibernaculum","2012",10,299
+"SSR-1",60.1,-112.8,2012-10-26,0,"Yes","Hibernaculum","2012",10,300
+"Thebacha maternity",60.09,-112.25,2011-05-03,15,"Yes","Myotis lucifugus maternity colony","2011",5,123
+"Thebacha maternity",60.09,-112.25,2011-05-04,4,"Yes","Myotis lucifugus maternity colony","2011",5,124
+"Thebacha maternity",60.09,-112.25,2011-05-18,384,"Yes","Myotis lucifugus maternity colony","2011",5,138
+"Thebacha maternity",60.09,-112.25,2011-05-19,472,"Yes","Myotis lucifugus maternity colony","2011",5,139
+"Thebacha maternity",60.09,-112.25,2011-05-20,0,"Yes","Myotis lucifugus maternity colony","2011",5,140
+"Thebacha maternity",60.09,-112.25,2011-05-21,0,"Yes","Myotis lucifugus maternity colony","2011",5,141
+"Thebacha maternity",60.09,-112.25,2011-05-22,0,"Yes","Myotis lucifugus maternity colony","2011",5,142
+"Thebacha maternity",60.09,-112.25,2011-05-23,170,"Yes","Myotis lucifugus maternity colony","2011",5,143
+"Thebacha maternity",60.09,-112.25,2011-05-24,63,"Yes","Myotis lucifugus maternity colony","2011",5,144
+"Thebacha maternity",60.09,-112.25,2011-05-25,124,"Yes","Myotis lucifugus maternity colony","2011",5,145
+"Thebacha maternity",60.09,-112.25,2011-05-26,158,"Yes","Myotis lucifugus maternity colony","2011",5,146
+"Thebacha maternity",60.09,-112.25,2011-05-27,200,"Yes","Myotis lucifugus maternity colony","2011",5,147
+"Thebacha maternity",60.09,-112.25,2011-05-28,107,"Yes","Myotis lucifugus maternity colony","2011",5,148
+"Thebacha maternity",60.09,-112.25,2011-05-29,178,"Yes","Myotis lucifugus maternity colony","2011",5,149
+"Thebacha maternity",60.09,-112.25,2011-05-30,158,"Yes","Myotis lucifugus maternity colony","2011",5,150
+"Thebacha maternity",60.09,-112.25,2011-05-31,187,"Yes","Myotis lucifugus maternity colony","2011",5,151
+"Thebacha maternity",60.09,-112.25,2011-06-01,309,"Yes","Myotis lucifugus maternity colony","2011",6,152
+"Thebacha maternity",60.09,-112.25,2011-06-02,112,"Yes","Myotis lucifugus maternity colony","2011",6,153
+"Thebacha maternity",60.09,-112.25,2011-06-03,79,"Yes","Myotis lucifugus maternity colony","2011",6,154
+"Thebacha maternity",60.09,-112.25,2011-06-04,53,"Yes","Myotis lucifugus maternity colony","2011",6,155
+"Thebacha maternity",60.09,-112.25,2011-06-05,63,"Yes","Myotis lucifugus maternity colony","2011",6,156
+"Thebacha maternity",60.09,-112.25,2011-06-06,37,"Yes","Myotis lucifugus maternity colony","2011",6,157
+"Thebacha maternity",60.09,-112.25,2011-06-07,88,"Yes","Myotis lucifugus maternity colony","2011",6,158
+"Thebacha maternity",60.09,-112.25,2011-06-15,237,"Yes","Myotis lucifugus maternity colony","2011",6,166
+"Thebacha maternity",60.09,-112.25,2011-06-16,335,"Yes","Myotis lucifugus maternity colony","2011",6,167
+"Thebacha maternity",60.09,-112.25,2011-06-17,297,"Yes","Myotis lucifugus maternity colony","2011",6,168
+"Thebacha maternity",60.09,-112.25,2011-06-18,235,"Yes","Myotis lucifugus maternity colony","2011",6,169
+"Thebacha maternity",60.09,-112.25,2011-06-19,299,"Yes","Myotis lucifugus maternity colony","2011",6,170
+"Thebacha maternity",60.09,-112.25,2011-06-20,181,"Yes","Myotis lucifugus maternity colony","2011",6,171
+"Thebacha maternity",60.09,-112.25,2011-06-21,279,"Yes","Myotis lucifugus maternity colony","2011",6,172
+"Thebacha maternity",60.09,-112.25,2011-06-22,419,"Yes","Myotis lucifugus maternity colony","2011",6,173
+"Thebacha maternity",60.09,-112.25,2011-06-23,222,"Yes","Myotis lucifugus maternity colony","2011",6,174
+"Thebacha maternity",60.09,-112.25,2011-06-24,298,"Yes","Myotis lucifugus maternity colony","2011",6,175
+"Thebacha maternity",60.09,-112.25,2011-06-25,332,"Yes","Myotis lucifugus maternity colony","2011",6,176
+"Thebacha maternity",60.09,-112.25,2011-06-26,333,"Yes","Myotis lucifugus maternity colony","2011",6,177
+"Thebacha maternity",60.09,-112.25,2011-06-27,473,"Yes","Myotis lucifugus maternity colony","2011",6,178
+"Thebacha maternity",60.09,-112.25,2011-06-28,385,"Yes","Myotis lucifugus maternity colony","2011",6,179
+"Thebacha maternity",60.09,-112.25,2011-06-29,358,"Yes","Myotis lucifugus maternity colony","2011",6,180
+"Thebacha maternity",60.09,-112.25,2011-07-08,703,"Yes","Myotis lucifugus maternity colony","2011",7,189
+"Thebacha maternity",60.09,-112.25,2011-07-09,525,"Yes","Myotis lucifugus maternity colony","2011",7,190
+"Thebacha maternity",60.09,-112.25,2011-07-10,630,"Yes","Myotis lucifugus maternity colony","2011",7,191
+"Thebacha maternity",60.09,-112.25,2011-07-11,823,"Yes","Myotis lucifugus maternity colony","2011",7,192
+"Thebacha maternity",60.09,-112.25,2011-07-12,731,"Yes","Myotis lucifugus maternity colony","2011",7,193
+"Thebacha maternity",60.09,-112.25,2011-07-13,776,"Yes","Myotis lucifugus maternity colony","2011",7,194
+"Thebacha maternity",60.09,-112.25,2011-07-14,1178,"Yes","Myotis lucifugus maternity colony","2011",7,195
+"Thebacha maternity",60.09,-112.25,2011-07-15,966,"Yes","Myotis lucifugus maternity colony","2011",7,196
+"Thebacha maternity",60.09,-112.25,2011-07-16,1250,"Yes","Myotis lucifugus maternity colony","2011",7,197
+"Thebacha maternity",60.09,-112.25,2011-07-17,1121,"Yes","Myotis lucifugus maternity colony","2011",7,198
+"Thebacha maternity",60.09,-112.25,2011-07-18,1367,"Yes","Myotis lucifugus maternity colony","2011",7,199
+"Thebacha maternity",60.09,-112.25,2011-07-19,1309,"Yes","Myotis lucifugus maternity colony","2011",7,200
+"Thebacha maternity",60.09,-112.25,2011-07-20,1233,"Yes","Myotis lucifugus maternity colony","2011",7,201
+"Thebacha maternity",60.09,-112.25,2011-07-21,1091,"Yes","Myotis lucifugus maternity colony","2011",7,202
+"Thebacha maternity",60.09,-112.25,2011-07-22,989,"Yes","Myotis lucifugus maternity colony","2011",7,203
+"Thebacha maternity",60.09,-112.25,2011-07-23,1090,"Yes","Myotis lucifugus maternity colony","2011",7,204
+"Thebacha maternity",60.09,-112.25,2011-07-24,1195,"Yes","Myotis lucifugus maternity colony","2011",7,205
+"Thebacha maternity",60.09,-112.25,2011-07-25,1021,"Yes","Myotis lucifugus maternity colony","2011",7,206
+"Thebacha maternity",60.09,-112.25,2011-07-26,882,"Yes","Myotis lucifugus maternity colony","2011",7,207
+"Thebacha maternity",60.09,-112.25,2011-07-27,1084,"Yes","Myotis lucifugus maternity colony","2011",7,208
+"Thebacha maternity",60.09,-112.25,2011-07-28,873,"Yes","Myotis lucifugus maternity colony","2011",7,209
+"Thebacha maternity",60.09,-112.25,2011-07-29,874,"Yes","Myotis lucifugus maternity colony","2011",7,210
+"Thebacha maternity",60.09,-112.25,2011-07-30,576,"Yes","Myotis lucifugus maternity colony","2011",7,211
+"Thebacha maternity",60.09,-112.25,2011-07-31,524,"Yes","Myotis lucifugus maternity colony","2011",7,212
+"Thebacha maternity",60.09,-112.25,2011-08-01,717,"Yes","Myotis lucifugus maternity colony","2011",8,213
+"Thebacha maternity",60.09,-112.25,2011-08-02,609,"Yes","Myotis lucifugus maternity colony","2011",8,214
+"Thebacha maternity",60.09,-112.25,2011-08-03,422,"Yes","Myotis lucifugus maternity colony","2011",8,215
+"Thebacha maternity",60.09,-112.25,2011-08-04,315,"Yes","Myotis lucifugus maternity colony","2011",8,216
+"Thebacha maternity",60.09,-112.25,2011-08-05,344,"Yes","Myotis lucifugus maternity colony","2011",8,217
+"Thebacha maternity",60.09,-112.25,2011-08-06,318,"Yes","Myotis lucifugus maternity colony","2011",8,218
+"Thebacha maternity",60.09,-112.25,2011-08-07,249,"Yes","Myotis lucifugus maternity colony","2011",8,219
+"Thebacha maternity",60.09,-112.25,2011-08-08,345,"Yes","Myotis lucifugus maternity colony","2011",8,220
+"Thebacha maternity",60.09,-112.25,2011-08-09,293,"Yes","Myotis lucifugus maternity colony","2011",8,221
+"Thebacha maternity",60.09,-112.25,2011-08-10,165,"Yes","Myotis lucifugus maternity colony","2011",8,222
+"Thebacha maternity",60.09,-112.25,2011-08-11,196,"Yes","Myotis lucifugus maternity colony","2011",8,223
+"Thebacha maternity",60.09,-112.25,2011-08-12,113,"Yes","Myotis lucifugus maternity colony","2011",8,224
+"Thebacha maternity",60.09,-112.25,2011-08-13,66,"Yes","Myotis lucifugus maternity colony","2011",8,225
+"Thebacha maternity",60.09,-112.25,2011-08-14,160,"Yes","Myotis lucifugus maternity colony","2011",8,226
+"Thebacha maternity",60.09,-112.25,2011-08-15,110,"Yes","Myotis lucifugus maternity colony","2011",8,227
+"Thebacha maternity",60.09,-112.25,2011-08-16,110,"Yes","Myotis lucifugus maternity colony","2011",8,228
+"Thebacha maternity",60.09,-112.25,2011-08-17,133,"Yes","Myotis lucifugus maternity colony","2011",8,229
+"Thebacha maternity",60.09,-112.25,2011-08-18,129,"Yes","Myotis lucifugus maternity colony","2011",8,230
+"Thebacha maternity",60.09,-112.25,2011-08-19,34,"Yes","Myotis lucifugus maternity colony","2011",8,231
+"Thebacha maternity",60.09,-112.25,2011-08-20,231,"Yes","Myotis lucifugus maternity colony","2011",8,232
+"Thebacha maternity",60.09,-112.25,2011-08-21,89,"Yes","Myotis lucifugus maternity colony","2011",8,233
+"Thebacha maternity",60.09,-112.25,2011-08-22,58,"Yes","Myotis lucifugus maternity colony","2011",8,234
+"Thebacha maternity",60.09,-112.25,2011-08-23,62,"Yes","Myotis lucifugus maternity colony","2011",8,235
+"Thebacha maternity",60.09,-112.25,2011-08-24,81,"Yes","Myotis lucifugus maternity colony","2011",8,236
+"Thebacha maternity",60.09,-112.25,2011-08-25,31,"Yes","Myotis lucifugus maternity colony","2011",8,237
+"Thebacha maternity",60.09,-112.25,2011-08-26,12,"Yes","Myotis lucifugus maternity colony","2011",8,238
+"Thebacha maternity",60.09,-112.25,2011-08-27,245,"Yes","Myotis lucifugus maternity colony","2011",8,239
+"Thebacha maternity",60.09,-112.25,2011-08-28,12,"Yes","Myotis lucifugus maternity colony","2011",8,240
+"Thebacha maternity",60.09,-112.25,2011-08-29,37,"Yes","Myotis lucifugus maternity colony","2011",8,241
+"Thebacha maternity",60.09,-112.25,2011-08-30,4,"Yes","Myotis lucifugus maternity colony","2011",8,242
+"Thebacha maternity",60.09,-112.25,2011-08-31,2,"Yes","Myotis lucifugus maternity colony","2011",8,243
+"Thebacha maternity",60.09,-112.25,2011-09-01,24,"Yes","Myotis lucifugus maternity colony","2011",9,244
+"Thebacha maternity",60.09,-112.25,2011-09-02,9,"Yes","Myotis lucifugus maternity colony","2011",9,245
+"Thebacha maternity",60.09,-112.25,2011-09-03,66,"Yes","Myotis lucifugus maternity colony","2011",9,246
+"Thebacha maternity",60.09,-112.25,2011-09-04,68,"Yes","Myotis lucifugus maternity colony","2011",9,247
+"Thebacha maternity",60.09,-112.25,2011-09-05,24,"Yes","Myotis lucifugus maternity colony","2011",9,248
+"Thebacha maternity",60.09,-112.25,2011-09-06,77,"Yes","Myotis lucifugus maternity colony","2011",9,249
+"Thebacha maternity",60.09,-112.25,2011-09-07,32,"Yes","Myotis lucifugus maternity colony","2011",9,250
+"Thebacha maternity",60.09,-112.25,2011-09-08,23,"Yes","Myotis lucifugus maternity colony","2011",9,251
+"Thebacha maternity",60.09,-112.25,2011-09-09,162,"Yes","Myotis lucifugus maternity colony","2011",9,252
+"Thebacha maternity",60.09,-112.25,2011-09-10,3,"Yes","Myotis lucifugus maternity colony","2011",9,253
+"Thebacha maternity",60.09,-112.25,2011-09-11,19,"Yes","Myotis lucifugus maternity colony","2011",9,254
+"Thebacha maternity",60.09,-112.25,2011-09-12,4,"Yes","Myotis lucifugus maternity colony","2011",9,255
+"Thebacha maternity",60.09,-112.25,2011-09-13,2,"Yes","Myotis lucifugus maternity colony","2011",9,256
+"Thebacha maternity",60.09,-112.25,2011-09-14,105,"Yes","Myotis lucifugus maternity colony","2011",9,257
+"Thebacha maternity",60.09,-112.25,2011-09-15,12,"Yes","Myotis lucifugus maternity colony","2011",9,258
+"Thebacha maternity",60.09,-112.25,2011-09-16,13,"Yes","Myotis lucifugus maternity colony","2011",9,259
+"Thebacha maternity",60.09,-112.25,2011-09-17,8,"Yes","Myotis lucifugus maternity colony","2011",9,260
+"Thebacha maternity",60.09,-112.25,2011-09-18,6,"Yes","Myotis lucifugus maternity colony","2011",9,261
+"Thebacha maternity",60.09,-112.25,2011-09-19,1,"Yes","Myotis lucifugus maternity colony","2011",9,262
+"Thebacha maternity",60.09,-112.25,2011-09-20,335,"Yes","Myotis lucifugus maternity colony","2011",9,263
+"Thebacha maternity",60.09,-112.25,2011-09-21,315,"Yes","Myotis lucifugus maternity colony","2011",9,264
+"Thebacha maternity",60.09,-112.25,2011-09-22,11,"Yes","Myotis lucifugus maternity colony","2011",9,265
+"Thebacha maternity",60.09,-112.25,2011-09-23,3,"Yes","Myotis lucifugus maternity colony","2011",9,266
+"Thebacha maternity",60.09,-112.25,2011-09-24,0,"Yes","Myotis lucifugus maternity colony","2011",9,267
+"Thebacha maternity",60.09,-112.25,2011-09-25,0,"Yes","Myotis lucifugus maternity colony","2011",9,268
+"Thebacha maternity",60.09,-112.25,2011-09-26,3,"Yes","Myotis lucifugus maternity colony","2011",9,269
+"Thebacha maternity",60.09,-112.25,2011-09-27,1,"Yes","Myotis lucifugus maternity colony","2011",9,270
+"Thebacha maternity",60.09,-112.25,2011-09-28,0,"Yes","Myotis lucifugus maternity colony","2011",9,271
+"Thebacha maternity",60.09,-112.25,2011-09-29,0,"Yes","Myotis lucifugus maternity colony","2011",9,272
+"Thebacha maternity",60.09,-112.25,2011-09-30,0,"Yes","Myotis lucifugus maternity colony","2011",9,273
+"Thebacha maternity",60.09,-112.25,2011-10-01,0,"Yes","Myotis lucifugus maternity colony","2011",10,274
+"Thebacha maternity",60.09,-112.25,2011-10-02,0,"Yes","Myotis lucifugus maternity colony","2011",10,275
+"Thebacha maternity",60.09,-112.25,2011-10-03,0,"Yes","Myotis lucifugus maternity colony","2011",10,276
+"Thebacha maternity",60.09,-112.25,2011-10-04,0,"Yes","Myotis lucifugus maternity colony","2011",10,277
+"Thebacha maternity",60.09,-112.25,2011-10-05,0,"Yes","Myotis lucifugus maternity colony","2011",10,278
+"Thebacha maternity",60.09,-112.25,2011-10-06,0,"Yes","Myotis lucifugus maternity colony","2011",10,279
+"Thebacha maternity",60.09,-112.25,2011-10-07,0,"Yes","Myotis lucifugus maternity colony","2011",10,280
+"Thebacha maternity",60.09,-112.25,2011-10-08,0,"Yes","Myotis lucifugus maternity colony","2011",10,281
+"Thebacha maternity",60.09,-112.25,2011-10-09,0,"Yes","Myotis lucifugus maternity colony","2011",10,282
+"Thebacha maternity",60.09,-112.25,2011-10-10,0,"Yes","Myotis lucifugus maternity colony","2011",10,283
+"Thebacha maternity",60.09,-112.25,2011-10-11,0,"Yes","Myotis lucifugus maternity colony","2011",10,284
+"Thebacha maternity",60.09,-112.25,2012-04-25,0,"Yes","Myotis lucifugus maternity colony","2012",4,116
+"Thebacha maternity",60.09,-112.25,2012-04-26,0,"Yes","Myotis lucifugus maternity colony","2012",4,117
+"Thebacha maternity",60.09,-112.25,2012-05-24,216,"Yes","Myotis lucifugus maternity colony","2012",5,145
+"Thebacha maternity",60.09,-112.25,2012-05-25,255,"Yes","Myotis lucifugus maternity colony","2012",5,146
+"Thebacha maternity",60.09,-112.25,2012-05-26,359,"Yes","Myotis lucifugus maternity colony","2012",5,147
+"Thebacha maternity",60.09,-112.25,2012-05-27,277,"Yes","Myotis lucifugus maternity colony","2012",5,148
+"Thebacha maternity",60.09,-112.25,2012-05-28,281,"Yes","Myotis lucifugus maternity colony","2012",5,149
+"Thebacha maternity",60.09,-112.25,2012-05-29,308,"Yes","Myotis lucifugus maternity colony","2012",5,150
+"Thebacha maternity",60.09,-112.25,2012-05-30,353,"Yes","Myotis lucifugus maternity colony","2012",5,151
+"Thebacha maternity",60.09,-112.25,2012-05-31,331,"Yes","Myotis lucifugus maternity colony","2012",5,152
+"Thebacha maternity",60.09,-112.25,2012-06-01,374,"Yes","Myotis lucifugus maternity colony","2012",6,153
+"Thebacha maternity",60.09,-112.25,2012-06-02,285,"Yes","Myotis lucifugus maternity colony","2012",6,154
+"Thebacha maternity",60.09,-112.25,2012-06-03,301,"Yes","Myotis lucifugus maternity colony","2012",6,155
+"Thebacha maternity",60.09,-112.25,2012-06-04,257,"Yes","Myotis lucifugus maternity colony","2012",6,156
+"Thebacha maternity",60.09,-112.25,2012-06-05,279,"Yes","Myotis lucifugus maternity colony","2012",6,157
+"Thebacha maternity",60.09,-112.25,2012-06-06,273,"Yes","Myotis lucifugus maternity colony","2012",6,158
+"Thebacha maternity",60.09,-112.25,2012-06-07,243,"Yes","Myotis lucifugus maternity colony","2012",6,159
+"Thebacha maternity",60.09,-112.25,2012-06-08,295,"Yes","Myotis lucifugus maternity colony","2012",6,160
+"Thebacha maternity",60.09,-112.25,2012-06-09,381,"Yes","Myotis lucifugus maternity colony","2012",6,161
+"Thebacha maternity",60.09,-112.25,2012-06-10,272,"Yes","Myotis lucifugus maternity colony","2012",6,162
+"Thebacha maternity",60.09,-112.25,2012-06-11,270,"Yes","Myotis lucifugus maternity colony","2012",6,163
+"Thebacha maternity",60.09,-112.25,2012-06-12,411,"Yes","Myotis lucifugus maternity colony","2012",6,164
+"Thebacha maternity",60.09,-112.25,2012-06-13,347,"Yes","Myotis lucifugus maternity colony","2012",6,165
+"Thebacha maternity",60.09,-112.25,2012-06-14,499,"Yes","Myotis lucifugus maternity colony","2012",6,166
+"Thebacha maternity",60.09,-112.25,2012-06-15,335,"Yes","Myotis lucifugus maternity colony","2012",6,167
+"Thebacha maternity",60.09,-112.25,2012-06-16,346,"Yes","Myotis lucifugus maternity colony","2012",6,168
+"Thebacha maternity",60.09,-112.25,2012-06-17,530,"Yes","Myotis lucifugus maternity colony","2012",6,169
+"Thebacha maternity",60.09,-112.25,2012-06-18,310,"Yes","Myotis lucifugus maternity colony","2012",6,170
+"Thebacha maternity",60.09,-112.25,2012-06-19,342,"Yes","Myotis lucifugus maternity colony","2012",6,171
+"Thebacha maternity",60.09,-112.25,2012-06-20,315,"Yes","Myotis lucifugus maternity colony","2012",6,172
+"Thebacha maternity",60.09,-112.25,2012-06-21,302,"Yes","Myotis lucifugus maternity colony","2012",6,173
+"Thebacha maternity",60.09,-112.25,2012-06-22,33,"Yes","Myotis lucifugus maternity colony","2012",6,174
+"Thebacha maternity",60.09,-112.25,2012-07-04,418,"Yes","Myotis lucifugus maternity colony","2012",7,186
+"Thebacha maternity",60.09,-112.25,2012-07-05,663,"Yes","Myotis lucifugus maternity colony","2012",7,187
+"Thebacha maternity",60.09,-112.25,2012-07-06,121,"Yes","Myotis lucifugus maternity colony","2012",7,188
+"Thebacha maternity",60.09,-112.25,2012-07-08,929,"Yes","Myotis lucifugus maternity colony","2012",7,190
+"Thebacha maternity",60.09,-112.25,2012-07-09,1003,"Yes","Myotis lucifugus maternity colony","2012",7,191
+"Thebacha maternity",60.09,-112.25,2012-07-10,901,"Yes","Myotis lucifugus maternity colony","2012",7,192
+"Thebacha maternity",60.09,-112.25,2012-07-11,757,"Yes","Myotis lucifugus maternity colony","2012",7,193
+"Thebacha maternity",60.09,-112.25,2012-07-12,1256,"Yes","Myotis lucifugus maternity colony","2012",7,194
+"Thebacha maternity",60.09,-112.25,2012-07-13,1367,"Yes","Myotis lucifugus maternity colony","2012",7,195
+"Thebacha maternity",60.09,-112.25,2012-07-14,1171,"Yes","Myotis lucifugus maternity colony","2012",7,196
+"Thebacha maternity",60.09,-112.25,2012-07-15,1298,"Yes","Myotis lucifugus maternity colony","2012",7,197
+"Thebacha maternity",60.09,-112.25,2012-07-16,1854,"Yes","Myotis lucifugus maternity colony","2012",7,198
+"Thebacha maternity",60.09,-112.25,2012-07-17,1910,"Yes","Myotis lucifugus maternity colony","2012",7,199
+"Thebacha maternity",60.09,-112.25,2012-07-18,1855,"Yes","Myotis lucifugus maternity colony","2012",7,200
+"Thebacha maternity",60.09,-112.25,2012-07-19,591,"Yes","Myotis lucifugus maternity colony","2012",7,201
+"Thebacha maternity",60.09,-112.25,2012-07-20,585,"Yes","Myotis lucifugus maternity colony","2012",7,202
+"Thebacha maternity",60.09,-112.25,2012-07-21,559,"Yes","Myotis lucifugus maternity colony","2012",7,203
+"Thebacha maternity",60.09,-112.25,2012-07-22,520,"Yes","Myotis lucifugus maternity colony","2012",7,204
+"Thebacha maternity",60.09,-112.25,2012-07-23,429,"Yes","Myotis lucifugus maternity colony","2012",7,205
+"Thebacha maternity",60.09,-112.25,2012-07-24,504,"Yes","Myotis lucifugus maternity colony","2012",7,206
+"Thebacha maternity",60.09,-112.25,2012-07-25,414,"Yes","Myotis lucifugus maternity colony","2012",7,207
+"Thebacha maternity",60.09,-112.25,2012-07-26,411,"Yes","Myotis lucifugus maternity colony","2012",7,208
+"Thebacha maternity",60.09,-112.25,2012-07-27,725,"Yes","Myotis lucifugus maternity colony","2012",7,209
+"Thebacha maternity",60.09,-112.25,2012-07-28,830,"Yes","Myotis lucifugus maternity colony","2012",7,210
+"Thebacha maternity",60.09,-112.25,2012-07-29,470,"Yes","Myotis lucifugus maternity colony","2012",7,211
+"Thebacha maternity",60.09,-112.25,2012-07-30,356,"Yes","Myotis lucifugus maternity colony","2012",7,212
+"Thebacha maternity",60.09,-112.25,2012-07-31,262,"Yes","Myotis lucifugus maternity colony","2012",7,213
+"Thebacha maternity",60.09,-112.25,2012-08-01,186,"Yes","Myotis lucifugus maternity colony","2012",8,214
+"Thebacha maternity",60.09,-112.25,2012-08-02,142,"Yes","Myotis lucifugus maternity colony","2012",8,215
+"Thebacha maternity",60.09,-112.25,2012-08-03,161,"Yes","Myotis lucifugus maternity colony","2012",8,216
+"Thebacha maternity",60.09,-112.25,2012-08-04,233,"Yes","Myotis lucifugus maternity colony","2012",8,217
+"Thebacha maternity",60.09,-112.25,2012-08-05,83,"Yes","Myotis lucifugus maternity colony","2012",8,218
+"Thebacha maternity",60.09,-112.25,2012-08-06,55,"Yes","Myotis lucifugus maternity colony","2012",8,219
+"Thebacha maternity",60.09,-112.25,2012-08-07,65,"Yes","Myotis lucifugus maternity colony","2012",8,220
+"Thebacha maternity",60.09,-112.25,2012-08-08,68,"Yes","Myotis lucifugus maternity colony","2012",8,221
+"Thebacha maternity",60.09,-112.25,2012-08-09,225,"Yes","Myotis lucifugus maternity colony","2012",8,222
+"Thebacha maternity",60.09,-112.25,2012-08-10,67,"Yes","Myotis lucifugus maternity colony","2012",8,223
+"Thebacha maternity",60.09,-112.25,2012-08-11,67,"Yes","Myotis lucifugus maternity colony","2012",8,224
+"Thebacha maternity",60.09,-112.25,2012-08-12,22,"Yes","Myotis lucifugus maternity colony","2012",8,225
+"Thebacha maternity",60.09,-112.25,2012-08-13,86,"Yes","Myotis lucifugus maternity colony","2012",8,226
+"Thebacha maternity",60.09,-112.25,2012-08-14,12,"Yes","Myotis lucifugus maternity colony","2012",8,227
+"Thebacha maternity",60.09,-112.25,2012-08-15,14,"Yes","Myotis lucifugus maternity colony","2012",8,228
+"Thebacha maternity",60.09,-112.25,2012-08-16,17,"Yes","Myotis lucifugus maternity colony","2012",8,229
+"Thebacha maternity",60.09,-112.25,2012-08-17,28,"Yes","Myotis lucifugus maternity colony","2012",8,230
+"Thebacha maternity",60.09,-112.25,2012-08-18,38,"Yes","Myotis lucifugus maternity colony","2012",8,231
+"Thebacha maternity",60.09,-112.25,2012-08-19,22,"Yes","Myotis lucifugus maternity colony","2012",8,232
+"Thebacha maternity",60.09,-112.25,2012-08-20,40,"Yes","Myotis lucifugus maternity colony","2012",8,233
+"Thebacha maternity",60.09,-112.25,2012-08-21,17,"Yes","Myotis lucifugus maternity colony","2012",8,234
+"Thebacha maternity",60.09,-112.25,2012-08-22,22,"Yes","Myotis lucifugus maternity colony","2012",8,235
+"Thebacha maternity",60.09,-112.25,2012-08-23,55,"Yes","Myotis lucifugus maternity colony","2012",8,236
+"Thebacha maternity",60.09,-112.25,2012-08-24,40,"Yes","Myotis lucifugus maternity colony","2012",8,237
+"Thebacha maternity",60.09,-112.25,2012-08-25,17,"Yes","Myotis lucifugus maternity colony","2012",8,238
+"Thebacha maternity",60.09,-112.25,2012-08-26,27,"Yes","Myotis lucifugus maternity colony","2012",8,239
+"Thebacha maternity",60.09,-112.25,2012-08-27,9,"Yes","Myotis lucifugus maternity colony","2012",8,240
+"Thebacha maternity",60.09,-112.25,2012-08-28,20,"Yes","Myotis lucifugus maternity colony","2012",8,241
+"Thebacha maternity",60.09,-112.25,2012-08-29,59,"Yes","Myotis lucifugus maternity colony","2012",8,242
+"Thebacha maternity",60.09,-112.25,2012-08-30,14,"Yes","Myotis lucifugus maternity colony","2012",8,243
+"Thebacha maternity",60.09,-112.25,2012-08-31,9,"Yes","Myotis lucifugus maternity colony","2012",8,244
+"Thebacha maternity",60.09,-112.25,2012-09-01,5,"Yes","Myotis lucifugus maternity colony","2012",9,245
+"Thebacha maternity",60.09,-112.25,2012-09-02,17,"Yes","Myotis lucifugus maternity colony","2012",9,246
+"Thebacha maternity",60.09,-112.25,2012-09-03,10,"Yes","Myotis lucifugus maternity colony","2012",9,247
+"Thebacha maternity",60.09,-112.25,2012-09-04,3,"Yes","Myotis lucifugus maternity colony","2012",9,248
+"Thebacha maternity",60.09,-112.25,2012-09-05,4,"Yes","Myotis lucifugus maternity colony","2012",9,249
+"Thebacha maternity",60.09,-112.25,2012-09-06,12,"Yes","Myotis lucifugus maternity colony","2012",9,250
+"Thebacha maternity",60.09,-112.25,2012-09-07,5,"Yes","Myotis lucifugus maternity colony","2012",9,251
+"Thebacha maternity",60.09,-112.25,2012-09-08,3,"Yes","Myotis lucifugus maternity colony","2012",9,252
+"Thebacha maternity",60.09,-112.25,2012-09-09,40,"Yes","Myotis lucifugus maternity colony","2012",9,253
+"Thebacha maternity",60.09,-112.25,2012-09-10,2,"Yes","Myotis lucifugus maternity colony","2012",9,254
+"Thebacha maternity",60.09,-112.25,2012-09-11,1,"Yes","Myotis lucifugus maternity colony","2012",9,255
+"Thebacha maternity",60.09,-112.25,2012-09-12,5,"Yes","Myotis lucifugus maternity colony","2012",9,256
+"Thebacha maternity",60.09,-112.25,2012-09-13,7,"Yes","Myotis lucifugus maternity colony","2012",9,257
+"Thebacha maternity",60.09,-112.25,2012-09-14,5,"Yes","Myotis lucifugus maternity colony","2012",9,258
+"Thebacha maternity",60.09,-112.25,2012-09-15,2,"Yes","Myotis lucifugus maternity colony","2012",9,259
+"Thebacha maternity",60.09,-112.25,2012-09-16,13,"Yes","Myotis lucifugus maternity colony","2012",9,260
+"Thebacha maternity",60.09,-112.25,2012-09-17,61,"Yes","Myotis lucifugus maternity colony","2012",9,261
+"Thebacha maternity",60.09,-112.25,2012-09-18,38,"Yes","Myotis lucifugus maternity colony","2012",9,262
+"Thebacha maternity",60.09,-112.25,2012-09-19,7,"Yes","Myotis lucifugus maternity colony","2012",9,263
+"Thebacha maternity",60.09,-112.25,2012-09-20,26,"Yes","Myotis lucifugus maternity colony","2012",9,264
+"Thebacha maternity",60.09,-112.25,2012-09-21,122,"Yes","Myotis lucifugus maternity colony","2012",9,265
+"Thebacha maternity",60.09,-112.25,2012-09-22,33,"Yes","Myotis lucifugus maternity colony","2012",9,266
+"Thebacha maternity",60.09,-112.25,2012-09-23,16,"Yes","Myotis lucifugus maternity colony","2012",9,267
+"Thebacha maternity",60.09,-112.25,2012-09-24,16,"Yes","Myotis lucifugus maternity colony","2012",9,268
+"Thebacha maternity",60.09,-112.25,2012-09-25,3,"Yes","Myotis lucifugus maternity colony","2012",9,269
+"Thebacha maternity",60.09,-112.25,2012-09-26,7,"Yes","Myotis lucifugus maternity colony","2012",9,270
+"Thebacha maternity",60.09,-112.25,2012-09-27,7,"Yes","Myotis lucifugus maternity colony","2012",9,271
+"Thebacha maternity",60.09,-112.25,2012-09-28,0,"Yes","Myotis lucifugus maternity colony","2012",9,272
+"Thebacha maternity",60.09,-112.25,2012-09-29,1,"Yes","Myotis lucifugus maternity colony","2012",9,273
+"Thebacha maternity",60.09,-112.25,2012-09-30,0,"Yes","Myotis lucifugus maternity colony","2012",9,274
+"Thebacha maternity",60.09,-112.25,2012-10-01,0,"Yes","Myotis lucifugus maternity colony","2012",10,275
+"Thebacha maternity",60.09,-112.25,2012-10-02,42,"Yes","Myotis lucifugus maternity colony","2012",10,276
+"Thebacha maternity",60.09,-112.25,2012-10-03,0,"Yes","Myotis lucifugus maternity colony","2012",10,277
+"Thebacha maternity",60.09,-112.25,2012-10-04,0,"Yes","Myotis lucifugus maternity colony","2012",10,278
+"Thebacha maternity",60.09,-112.25,2012-10-05,0,"Yes","Myotis lucifugus maternity colony","2012",10,279
+"Thebacha maternity",60.09,-112.25,2012-10-06,0,"Yes","Myotis lucifugus maternity colony","2012",10,280
+"Thebacha maternity",60.09,-112.25,2012-10-07,0,"Yes","Myotis lucifugus maternity colony","2012",10,281
+"Thebacha maternity",60.09,-112.25,2012-10-08,0,"Yes","Myotis lucifugus maternity colony","2012",10,282
+"Thebacha maternity",60.09,-112.25,2012-10-09,0,"Yes","Myotis lucifugus maternity colony","2012",10,283
+"Thebacha maternity",60.09,-112.25,2012-10-10,0,"Yes","Myotis lucifugus maternity colony","2012",10,284
+"Thebacha maternity",60.09,-112.25,2012-10-11,0,"Yes","Myotis lucifugus maternity colony","2012",10,285
+"Thebacha maternity",60.09,-112.25,2012-10-12,0,"Yes","Myotis lucifugus maternity colony","2012",10,286
+"Thebacha maternity",60.09,-112.25,2012-10-13,0,"Yes","Myotis lucifugus maternity colony","2012",10,287
+"Thebacha maternity",60.09,-112.25,2012-10-14,0,"Yes","Myotis lucifugus maternity colony","2012",10,288
+"Thebacha maternity",60.09,-112.25,2012-10-15,1,"Yes","Myotis lucifugus maternity colony","2012",10,289
+"Thebacha maternity",60.09,-112.25,2012-10-16,0,"Yes","Myotis lucifugus maternity colony","2012",10,290
+"Thebacha maternity",60.09,-112.25,2012-10-17,0,"Yes","Myotis lucifugus maternity colony","2012",10,291
+"Thebacha maternity",60.09,-112.25,2012-10-18,0,"Yes","Myotis lucifugus maternity colony","2012",10,292
+"Thebacha maternity",60.09,-112.25,2012-10-19,0,"Yes","Myotis lucifugus maternity colony","2012",10,293
+"Thebacha maternity",60.09,-112.25,2012-10-20,0,"Yes","Myotis lucifugus maternity colony","2012",10,294
+"Thebacha maternity",60.09,-112.25,2012-10-21,0,"Yes","Myotis lucifugus maternity colony","2012",10,295
+"Thebacha maternity",60.09,-112.25,2012-10-22,0,"Yes","Myotis lucifugus maternity colony","2012",10,296
+"Thebacha maternity",60.09,-112.25,2012-10-23,0,"Yes","Myotis lucifugus maternity colony","2012",10,297
+"Thebacha maternity",60.09,-112.25,2012-10-24,0,"Yes","Myotis lucifugus maternity colony","2012",10,298
+"Thebacha maternity",60.09,-112.25,2012-10-25,0,"Yes","Myotis lucifugus maternity colony","2012",10,299
+"Thebacha maternity",60.09,-112.25,2012-10-26,0,"Yes","Myotis lucifugus maternity colony","2012",10,300
+"Thebacha maternity",60.09,-112.25,2012-10-27,0,"Yes","Myotis lucifugus maternity colony","2012",10,301
+"Thebacha maternity",60.09,-112.25,2012-10-28,0,"Yes","Myotis lucifugus maternity colony","2012",10,302
+"Thebacha maternity",60.09,-112.25,2012-10-29,0,"Yes","Myotis lucifugus maternity colony","2012",10,303
+"Thebacha maternity",60.09,-112.25,2012-10-30,0,"Yes","Myotis lucifugus maternity colony","2012",10,304
+"Thebacha maternity",60.09,-112.25,2012-10-31,0,"Yes","Myotis lucifugus maternity colony","2012",10,305
+"Walk-in Cave",59.7,-112.2,2011-04-21,74,"Yes","Hibernaculum","2011",4,111
+"Walk-in Cave",59.7,-112.2,2011-04-22,173,"Yes","Hibernaculum","2011",4,112
+"Walk-in Cave",59.7,-112.2,2011-04-23,56,"Yes","Hibernaculum","2011",4,113
+"Walk-in Cave",59.7,-112.2,2011-04-24,124,"Yes","Hibernaculum","2011",4,114
+"Walk-in Cave",59.7,-112.2,2011-04-25,506,"Yes","Hibernaculum","2011",4,115
+"Walk-in Cave",59.7,-112.2,2011-04-26,361,"Yes","Hibernaculum","2011",4,116
+"Walk-in Cave",59.7,-112.2,2011-04-27,508,"Yes","Hibernaculum","2011",4,117
+"Walk-in Cave",59.7,-112.2,2011-04-28,413,"Yes","Hibernaculum","2011",4,118
+"Walk-in Cave",59.7,-112.2,2011-04-29,244,"Yes","Hibernaculum","2011",4,119
+"Walk-in Cave",59.7,-112.2,2011-04-30,498,"Yes","Hibernaculum","2011",4,120
+"Walk-in Cave",59.7,-112.2,2011-05-01,493,"Yes","Hibernaculum","2011",5,121
+"Walk-in Cave",59.7,-112.2,2011-05-02,380,"Yes","Hibernaculum","2011",5,122
+"Walk-in Cave",59.7,-112.2,2011-05-03,494,"Yes","Hibernaculum","2011",5,123
+"Walk-in Cave",59.7,-112.2,2011-05-04,413,"Yes","Hibernaculum","2011",5,124
+"Walk-in Cave",59.7,-112.2,2011-05-05,431,"Yes","Hibernaculum","2011",5,125
+"Walk-in Cave",59.7,-112.2,2011-05-06,162,"Yes","Hibernaculum","2011",5,126
+"Walk-in Cave",59.7,-112.2,2011-05-07,281,"Yes","Hibernaculum","2011",5,127
+"Walk-in Cave",59.7,-112.2,2011-05-08,297,"Yes","Hibernaculum","2011",5,128
+"Walk-in Cave",59.7,-112.2,2011-05-09,325,"Yes","Hibernaculum","2011",5,129
+"Walk-in Cave",59.7,-112.2,2011-06-11,124,"Yes","Hibernaculum","2011",6,162
+"Walk-in Cave",59.7,-112.2,2011-06-12,94,"Yes","Hibernaculum","2011",6,163
+"Walk-in Cave",59.7,-112.2,2011-06-13,74,"Yes","Hibernaculum","2011",6,164
+"Walk-in Cave",59.7,-112.2,2011-06-14,238,"Yes","Hibernaculum","2011",6,165
+"Walk-in Cave",59.7,-112.2,2011-06-15,156,"Yes","Hibernaculum","2011",6,166
+"Walk-in Cave",59.7,-112.2,2011-06-16,198,"Yes","Hibernaculum","2011",6,167
+"Walk-in Cave",59.7,-112.2,2011-06-17,56,"Yes","Hibernaculum","2011",6,168
+"Walk-in Cave",59.7,-112.2,2011-06-18,62,"Yes","Hibernaculum","2011",6,169
+"Walk-in Cave",59.7,-112.2,2011-06-19,252,"Yes","Hibernaculum","2011",6,170
+"Walk-in Cave",59.7,-112.2,2011-06-20,159,"Yes","Hibernaculum","2011",6,171
+"Walk-in Cave",59.7,-112.2,2011-06-21,285,"Yes","Hibernaculum","2011",6,172
+"Walk-in Cave",59.7,-112.2,2011-06-22,160,"Yes","Hibernaculum","2011",6,173
+"Walk-in Cave",59.7,-112.2,2011-06-23,48,"Yes","Hibernaculum","2011",6,174
+"Walk-in Cave",59.7,-112.2,2011-06-24,45,"Yes","Hibernaculum","2011",6,175
+"Walk-in Cave",59.7,-112.2,2011-06-25,38,"Yes","Hibernaculum","2011",6,176
+"Walk-in Cave",59.7,-112.2,2011-06-26,3,"Yes","Hibernaculum","2011",6,177
+"Walk-in Cave",59.7,-112.2,2011-06-27,8,"Yes","Hibernaculum","2011",6,178
+"Walk-in Cave",59.7,-112.2,2011-06-28,10,"Yes","Hibernaculum","2011",6,179
+"Walk-in Cave",59.7,-112.2,2011-06-29,19,"Yes","Hibernaculum","2011",6,180
+"Walk-in Cave",59.7,-112.2,2011-06-30,18,"Yes","Hibernaculum","2011",6,181
+"Walk-in Cave",59.7,-112.2,2011-07-01,11,"Yes","Hibernaculum","2011",7,182
+"Walk-in Cave",59.7,-112.2,2011-07-02,8,"Yes","Hibernaculum","2011",7,183
+"Walk-in Cave",59.7,-112.2,2011-07-03,161,"Yes","Hibernaculum","2011",7,184
+"Walk-in Cave",59.7,-112.2,2011-07-04,46,"Yes","Hibernaculum","2011",7,185
+"Walk-in Cave",59.7,-112.2,2011-07-05,89,"Yes","Hibernaculum","2011",7,186
+"Walk-in Cave",59.7,-112.2,2011-07-06,124,"Yes","Hibernaculum","2011",7,187
+"Walk-in Cave",59.7,-112.2,2011-07-07,78,"Yes","Hibernaculum","2011",7,188
+"Walk-in Cave",59.7,-112.2,2011-07-08,242,"Yes","Hibernaculum","2011",7,189
+"Walk-in Cave",59.7,-112.2,2011-07-09,95,"Yes","Hibernaculum","2011",7,190
+"Walk-in Cave",59.7,-112.2,2011-07-10,28,"Yes","Hibernaculum","2011",7,191
+"Walk-in Cave",59.7,-112.2,2011-07-11,615,"Yes","Hibernaculum","2011",7,192
+"Walk-in Cave",59.7,-112.2,2011-07-12,411,"Yes","Hibernaculum","2011",7,193
+"Walk-in Cave",59.7,-112.2,2011-07-13,422,"Yes","Hibernaculum","2011",7,194
+"Walk-in Cave",59.7,-112.2,2011-07-14,437,"Yes","Hibernaculum","2011",7,195
+"Walk-in Cave",59.7,-112.2,2011-07-15,307,"Yes","Hibernaculum","2011",7,196
+"Walk-in Cave",59.7,-112.2,2011-07-16,422,"Yes","Hibernaculum","2011",7,197
+"Walk-in Cave",59.7,-112.2,2011-07-17,460,"Yes","Hibernaculum","2011",7,198
+"Walk-in Cave",59.7,-112.2,2011-07-18,628,"Yes","Hibernaculum","2011",7,199
+"Walk-in Cave",59.7,-112.2,2011-07-19,567,"Yes","Hibernaculum","2011",7,200
+"Walk-in Cave",59.7,-112.2,2011-07-20,819,"Yes","Hibernaculum","2011",7,201
+"Walk-in Cave",59.7,-112.2,2011-07-21,639,"Yes","Hibernaculum","2011",7,202
+"Walk-in Cave",59.7,-112.2,2011-07-22,411,"Yes","Hibernaculum","2011",7,203
+"Walk-in Cave",59.7,-112.2,2011-07-23,553,"Yes","Hibernaculum","2011",7,204
+"Walk-in Cave",59.7,-112.2,2011-07-24,618,"Yes","Hibernaculum","2011",7,205
+"Walk-in Cave",59.7,-112.2,2011-07-25,666,"Yes","Hibernaculum","2011",7,206
+"Walk-in Cave",59.7,-112.2,2011-07-26,641,"Yes","Hibernaculum","2011",7,207
+"Walk-in Cave",59.7,-112.2,2011-07-27,90,"Yes","Hibernaculum","2011",7,208
+"Walk-in Cave",59.7,-112.2,2011-08-04,541,"Yes","Hibernaculum","2011",8,216
+"Walk-in Cave",59.7,-112.2,2011-08-05,589,"Yes","Hibernaculum","2011",8,217
+"Walk-in Cave",59.7,-112.2,2011-08-06,794,"Yes","Hibernaculum","2011",8,218
+"Walk-in Cave",59.7,-112.2,2011-08-07,794,"Yes","Hibernaculum","2011",8,219
+"Walk-in Cave",59.7,-112.2,2011-08-08,768,"Yes","Hibernaculum","2011",8,220
+"Walk-in Cave",59.7,-112.2,2011-08-09,415,"Yes","Hibernaculum","2011",8,221
+"Walk-in Cave",59.7,-112.2,2011-08-10,357,"Yes","Hibernaculum","2011",8,222
+"Walk-in Cave",59.7,-112.2,2011-08-11,293,"Yes","Hibernaculum","2011",8,223
+"Walk-in Cave",59.7,-112.2,2011-08-12,456,"Yes","Hibernaculum","2011",8,224
+"Walk-in Cave",59.7,-112.2,2011-08-13,190,"Yes","Hibernaculum","2011",8,225
+"Walk-in Cave",59.7,-112.2,2011-08-14,364,"Yes","Hibernaculum","2011",8,226
+"Walk-in Cave",59.7,-112.2,2011-08-15,370,"Yes","Hibernaculum","2011",8,227
+"Walk-in Cave",59.7,-112.2,2011-08-16,193,"Yes","Hibernaculum","2011",8,228
+"Walk-in Cave",59.7,-112.2,2011-08-17,72,"Yes","Hibernaculum","2011",8,229
+"Walk-in Cave",59.7,-112.2,2011-08-18,85,"Yes","Hibernaculum","2011",8,230
+"Walk-in Cave",59.7,-112.2,2011-08-19,38,"Yes","Hibernaculum","2011",8,231
+"Walk-in Cave",59.7,-112.2,2011-08-20,471,"Yes","Hibernaculum","2011",8,232
+"Walk-in Cave",59.7,-112.2,2011-08-21,773,"Yes","Hibernaculum","2011",8,233
+"Walk-in Cave",59.7,-112.2,2011-08-22,865,"Yes","Hibernaculum","2011",8,234
+"Walk-in Cave",59.7,-112.2,2011-08-23,652,"Yes","Hibernaculum","2011",8,235
+"Walk-in Cave",59.7,-112.2,2011-08-24,586,"Yes","Hibernaculum","2011",8,236
+"Walk-in Cave",59.7,-112.2,2011-08-25,111,"Yes","Hibernaculum","2011",8,237
+"Walk-in Cave",59.7,-112.2,2011-08-26,428,"Yes","Hibernaculum","2011",8,238
+"Walk-in Cave",59.7,-112.2,2011-08-27,391,"Yes","Hibernaculum","2011",8,239
+"Walk-in Cave",59.7,-112.2,2011-08-28,318,"Yes","Hibernaculum","2011",8,240
+"Walk-in Cave",59.7,-112.2,2011-08-29,72,"Yes","Hibernaculum","2011",8,241
+"Walk-in Cave",59.7,-112.2,2011-08-30,33,"Yes","Hibernaculum","2011",8,242
+"Walk-in Cave",59.7,-112.2,2011-08-31,9,"Yes","Hibernaculum","2011",8,243
+"Walk-in Cave",59.7,-112.2,2011-09-01,5,"Yes","Hibernaculum","2011",9,244
+"Walk-in Cave",59.7,-112.2,2011-09-02,3,"Yes","Hibernaculum","2011",9,245
+"Walk-in Cave",59.7,-112.2,2011-09-03,0,"Yes","Hibernaculum","2011",9,246
+"Walk-in Cave",59.7,-112.2,2011-09-04,0,"Yes","Hibernaculum","2011",9,247
+"Walk-in Cave",59.7,-112.2,2011-09-05,0,"Yes","Hibernaculum","2011",9,248
+"Walk-in Cave",59.7,-112.2,2011-09-06,1308,"Yes","Hibernaculum","2011",9,249
+"Walk-in Cave",59.7,-112.2,2011-09-07,922,"Yes","Hibernaculum","2011",9,250
+"Walk-in Cave",59.7,-112.2,2011-09-08,1276,"Yes","Hibernaculum","2011",9,251
+"Walk-in Cave",59.7,-112.2,2011-09-09,1336,"Yes","Hibernaculum","2011",9,252
+"Walk-in Cave",59.7,-112.2,2011-09-10,398,"Yes","Hibernaculum","2011",9,253
+"Walk-in Cave",59.7,-112.2,2011-09-11,194,"Yes","Hibernaculum","2011",9,254
+"Walk-in Cave",59.7,-112.2,2011-09-12,121,"Yes","Hibernaculum","2011",9,255
+"Walk-in Cave",59.7,-112.2,2011-09-13,42,"Yes","Hibernaculum","2011",9,256
+"Walk-in Cave",59.7,-112.2,2011-09-14,127,"Yes","Hibernaculum","2011",9,257
+"Walk-in Cave",59.7,-112.2,2011-09-15,302,"Yes","Hibernaculum","2011",9,258
+"Walk-in Cave",59.7,-112.2,2011-09-16,596,"Yes","Hibernaculum","2011",9,259
+"Walk-in Cave",59.7,-112.2,2011-09-17,407,"Yes","Hibernaculum","2011",9,260
+"Walk-in Cave",59.7,-112.2,2011-09-18,109,"Yes","Hibernaculum","2011",9,261
+"Walk-in Cave",59.7,-112.2,2011-09-19,84,"Yes","Hibernaculum","2011",9,262
+"Walk-in Cave",59.7,-112.2,2011-09-20,468,"Yes","Hibernaculum","2011",9,263
+"Walk-in Cave",59.7,-112.2,2011-09-21,645,"Yes","Hibernaculum","2011",9,264
+"Walk-in Cave",59.7,-112.2,2011-09-22,358,"Yes","Hibernaculum","2011",9,265
+"Walk-in Cave",59.7,-112.2,2012-04-20,153,"Yes","Hibernaculum","2012",4,111
+"Walk-in Cave",59.7,-112.2,2012-04-21,121,"Yes","Hibernaculum","2012",4,112
+"Walk-in Cave",59.7,-112.2,2012-04-22,206,"Yes","Hibernaculum","2012",4,113
+"Walk-in Cave",59.7,-112.2,2012-04-23,105,"Yes","Hibernaculum","2012",4,114
+"Walk-in Cave",59.7,-112.2,2012-04-24,99,"Yes","Hibernaculum","2012",4,115
+"Walk-in Cave",59.7,-112.2,2012-04-25,129,"Yes","Hibernaculum","2012",4,116
+"Walk-in Cave",59.7,-112.2,2012-04-26,185,"Yes","Hibernaculum","2012",4,117
+"Walk-in Cave",59.7,-112.2,2012-04-27,196,"Yes","Hibernaculum","2012",4,118
+"Walk-in Cave",59.7,-112.2,2012-04-28,300,"Yes","Hibernaculum","2012",4,119
+"Walk-in Cave",59.7,-112.2,2012-04-29,145,"Yes","Hibernaculum","2012",4,120
+"Walk-in Cave",59.7,-112.2,2012-04-30,259,"Yes","Hibernaculum","2012",4,121
+"Walk-in Cave",59.7,-112.2,2012-05-01,228,"Yes","Hibernaculum","2012",5,122
+"Walk-in Cave",59.7,-112.2,2012-05-02,250,"Yes","Hibernaculum","2012",5,123
+"Walk-in Cave",59.7,-112.2,2012-05-03,214,"Yes","Hibernaculum","2012",5,124
+"Walk-in Cave",59.7,-112.2,2012-05-04,329,"Yes","Hibernaculum","2012",5,125
+"Walk-in Cave",59.7,-112.2,2012-05-05,218,"Yes","Hibernaculum","2012",5,126
+"Walk-in Cave",59.7,-112.2,2012-05-06,134,"Yes","Hibernaculum","2012",5,127
+"Walk-in Cave",59.7,-112.2,2012-05-07,153,"Yes","Hibernaculum","2012",5,128
+"Walk-in Cave",59.7,-112.2,2012-05-08,171,"Yes","Hibernaculum","2012",5,129
+"Walk-in Cave",59.7,-112.2,2012-05-09,217,"Yes","Hibernaculum","2012",5,130
+"Walk-in Cave",59.7,-112.2,2012-05-10,142,"Yes","Hibernaculum","2012",5,131
+"Walk-in Cave",59.7,-112.2,2012-05-11,109,"Yes","Hibernaculum","2012",5,132
+"Walk-in Cave",59.7,-112.2,2012-05-12,148,"Yes","Hibernaculum","2012",5,133
+"Walk-in Cave",59.7,-112.2,2012-05-13,145,"Yes","Hibernaculum","2012",5,134
+"Walk-in Cave",59.7,-112.2,2012-05-14,100,"Yes","Hibernaculum","2012",5,135
+"Walk-in Cave",59.7,-112.2,2012-05-15,163,"Yes","Hibernaculum","2012",5,136
+"Walk-in Cave",59.7,-112.2,2012-05-16,171,"Yes","Hibernaculum","2012",5,137
+"Walk-in Cave",59.7,-112.2,2012-05-17,120,"Yes","Hibernaculum","2012",5,138
+"Walk-in Cave",59.7,-112.2,2012-05-18,121,"Yes","Hibernaculum","2012",5,139
+"Walk-in Cave",59.7,-112.2,2012-05-19,91,"Yes","Hibernaculum","2012",5,140
+"Walk-in Cave",59.7,-112.2,2012-05-20,75,"Yes","Hibernaculum","2012",5,141
+"Walk-in Cave",59.7,-112.2,2012-05-21,100,"Yes","Hibernaculum","2012",5,142
+"Walk-in Cave",59.7,-112.2,2012-06-04,59,"Yes","Hibernaculum","2012",6,156
+"Walk-in Cave",59.7,-112.2,2012-06-05,90,"Yes","Hibernaculum","2012",6,157
+"Walk-in Cave",59.7,-112.2,2012-06-06,145,"Yes","Hibernaculum","2012",6,158
+"Walk-in Cave",59.7,-112.2,2012-06-07,122,"Yes","Hibernaculum","2012",6,159
+"Walk-in Cave",59.7,-112.2,2012-06-08,107,"Yes","Hibernaculum","2012",6,160
+"Walk-in Cave",59.7,-112.2,2012-06-09,30,"Yes","Hibernaculum","2012",6,161
+"Walk-in Cave",59.7,-112.2,2012-06-10,28,"Yes","Hibernaculum","2012",6,162
+"Walk-in Cave",59.7,-112.2,2012-06-11,44,"Yes","Hibernaculum","2012",6,163
+"Walk-in Cave",59.7,-112.2,2012-06-12,40,"Yes","Hibernaculum","2012",6,164
+"Walk-in Cave",59.7,-112.2,2012-06-13,43,"Yes","Hibernaculum","2012",6,165
+"Walk-in Cave",59.7,-112.2,2012-06-14,29,"Yes","Hibernaculum","2012",6,166
+"Walk-in Cave",59.7,-112.2,2012-06-15,8,"Yes","Hibernaculum","2012",6,167
+"Walk-in Cave",59.7,-112.2,2012-06-16,21,"Yes","Hibernaculum","2012",6,168
+"Walk-in Cave",59.7,-112.2,2012-06-17,14,"Yes","Hibernaculum","2012",6,169
+"Walk-in Cave",59.7,-112.2,2012-06-18,19,"Yes","Hibernaculum","2012",6,170
+"Walk-in Cave",59.7,-112.2,2012-06-19,5,"Yes","Hibernaculum","2012",6,171
+"Walk-in Cave",59.7,-112.2,2012-06-20,9,"Yes","Hibernaculum","2012",6,172
+"Walk-in Cave",59.7,-112.2,2012-06-21,36,"Yes","Hibernaculum","2012",6,173
+"Walk-in Cave",59.7,-112.2,2012-06-22,17,"Yes","Hibernaculum","2012",6,174
+"Walk-in Cave",59.7,-112.2,2012-06-23,27,"Yes","Hibernaculum","2012",6,175
+"Walk-in Cave",59.7,-112.2,2012-06-24,39,"Yes","Hibernaculum","2012",6,176
+"Walk-in Cave",59.7,-112.2,2012-06-25,4,"Yes","Hibernaculum","2012",6,177
+"Walk-in Cave",59.7,-112.2,2012-06-26,2,"Yes","Hibernaculum","2012",6,178
+"Walk-in Cave",59.7,-112.2,2012-06-27,36,"Yes","Hibernaculum","2012",6,179
+"Walk-in Cave",59.7,-112.2,2012-06-28,14,"Yes","Hibernaculum","2012",6,180
+"Walk-in Cave",59.7,-112.2,2012-06-29,77,"Yes","Hibernaculum","2012",6,181
+"Walk-in Cave",59.7,-112.2,2012-06-30,47,"Yes","Hibernaculum","2012",6,182
+"Walk-in Cave",59.7,-112.2,2012-07-01,14,"Yes","Hibernaculum","2012",7,183
+"Walk-in Cave",59.7,-112.2,2012-07-02,27,"Yes","Hibernaculum","2012",7,184
+"Walk-in Cave",59.7,-112.2,2012-07-03,91,"Yes","Hibernaculum","2012",7,185
+"Walk-in Cave",59.7,-112.2,2012-07-04,29,"Yes","Hibernaculum","2012",7,186
+"Walk-in Cave",59.7,-112.2,2012-07-05,51,"Yes","Hibernaculum","2012",7,187
+"Walk-in Cave",59.7,-112.2,2012-07-06,99,"Yes","Hibernaculum","2012",7,188
+"Walk-in Cave",59.7,-112.2,2012-07-07,217,"Yes","Hibernaculum","2012",7,189
+"Walk-in Cave",59.7,-112.2,2012-07-08,378,"Yes","Hibernaculum","2012",7,190
+"Walk-in Cave",59.7,-112.2,2012-07-09,587,"Yes","Hibernaculum","2012",7,191
+"Walk-in Cave",59.7,-112.2,2012-07-10,398,"Yes","Hibernaculum","2012",7,192
+"Walk-in Cave",59.7,-112.2,2012-07-11,343,"Yes","Hibernaculum","2012",7,193
+"Walk-in Cave",59.7,-112.2,2012-07-12,109,"Yes","Hibernaculum","2012",7,194
+"Walk-in Cave",59.7,-112.2,2012-07-13,219,"Yes","Hibernaculum","2012",7,195
+"Walk-in Cave",59.7,-112.2,2012-07-14,298,"Yes","Hibernaculum","2012",7,196
+"Walk-in Cave",59.7,-112.2,2012-07-15,473,"Yes","Hibernaculum","2012",7,197
+"Walk-in Cave",59.7,-112.2,2012-07-16,725,"Yes","Hibernaculum","2012",7,198
+"Walk-in Cave",59.7,-112.2,2012-07-17,773,"Yes","Hibernaculum","2012",7,199
+"Walk-in Cave",59.7,-112.2,2012-07-18,606,"Yes","Hibernaculum","2012",7,200
+"Walk-in Cave",59.7,-112.2,2012-07-19,260,"Yes","Hibernaculum","2012",7,201
+"Walk-in Cave",59.7,-112.2,2012-07-20,599,"Yes","Hibernaculum","2012",7,202
+"Walk-in Cave",59.7,-112.2,2012-07-21,722,"Yes","Hibernaculum","2012",7,203
+"Walk-in Cave",59.7,-112.2,2012-07-22,723,"Yes","Hibernaculum","2012",7,204
+"Walk-in Cave",59.7,-112.2,2012-07-23,817,"Yes","Hibernaculum","2012",7,205
+"Walk-in Cave",59.7,-112.2,2012-07-24,899,"Yes","Hibernaculum","2012",7,206
+"Walk-in Cave",59.7,-112.2,2012-07-25,677,"Yes","Hibernaculum","2012",7,207
+"Walk-in Cave",59.7,-112.2,2012-07-26,510,"Yes","Hibernaculum","2012",7,208
+"Walk-in Cave",59.7,-112.2,2012-07-27,495,"Yes","Hibernaculum","2012",7,209
+"Walk-in Cave",59.7,-112.2,2012-07-28,825,"Yes","Hibernaculum","2012",7,210
+"Walk-in Cave",59.7,-112.2,2012-07-29,658,"Yes","Hibernaculum","2012",7,211
+"Walk-in Cave",59.7,-112.2,2012-07-30,570,"Yes","Hibernaculum","2012",7,212
+"Walk-in Cave",59.7,-112.2,2012-07-31,240,"Yes","Hibernaculum","2012",7,213
+"Walk-in Cave",59.7,-112.2,2012-08-01,221,"Yes","Hibernaculum","2012",8,214
+"Walk-in Cave",59.7,-112.2,2012-08-02,344,"Yes","Hibernaculum","2012",8,215
+"Walk-in Cave",59.7,-112.2,2012-08-03,458,"Yes","Hibernaculum","2012",8,216
+"Walk-in Cave",59.7,-112.2,2012-08-04,227,"Yes","Hibernaculum","2012",8,217
+"Walk-in Cave",59.7,-112.2,2012-08-05,0,"Yes","Hibernaculum","2012",8,218
+"Walk-in Cave",59.7,-112.2,2012-08-06,0,"Yes","Hibernaculum","2012",8,219
+"Walk-in Cave",59.7,-112.2,2012-08-07,0,"Yes","Hibernaculum","2012",8,220
+"Walk-in Cave",59.7,-112.2,2012-08-08,0,"Yes","Hibernaculum","2012",8,221
+"Walk-in Cave",59.7,-112.2,2012-08-09,0,"Yes","Hibernaculum","2012",8,222
+"Walk-in Cave",59.7,-112.2,2012-08-10,0,"Yes","Hibernaculum","2012",8,223
+"Walk-in Cave",59.7,-112.2,2012-08-11,0,"Yes","Hibernaculum","2012",8,224
+"Walk-in Cave",59.7,-112.2,2012-08-12,0,"Yes","Hibernaculum","2012",8,225
+"Walk-in Cave",59.7,-112.2,2012-08-13,51,"Yes","Hibernaculum","2012",8,226
+"Walk-in Cave",59.7,-112.2,2012-08-14,31,"Yes","Hibernaculum","2012",8,227
+"Walk-in Cave",59.7,-112.2,2012-08-15,86,"Yes","Hibernaculum","2012",8,228
+"Walk-in Cave",59.7,-112.2,2012-08-16,281,"Yes","Hibernaculum","2012",8,229
+"Walk-in Cave",59.7,-112.2,2012-08-17,648,"Yes","Hibernaculum","2012",8,230
+"Walk-in Cave",59.7,-112.2,2012-08-18,1020,"Yes","Hibernaculum","2012",8,231
+"Walk-in Cave",59.7,-112.2,2012-08-19,776,"Yes","Hibernaculum","2012",8,232
+"Walk-in Cave",59.7,-112.2,2012-08-20,847,"Yes","Hibernaculum","2012",8,233
+"Walk-in Cave",59.7,-112.2,2012-08-21,879,"Yes","Hibernaculum","2012",8,234
+"Walk-in Cave",59.7,-112.2,2012-08-22,743,"Yes","Hibernaculum","2012",8,235
+"Walk-in Cave",59.7,-112.2,2012-08-23,315,"Yes","Hibernaculum","2012",8,236
+"Walk-in Cave",59.7,-112.2,2012-08-24,162,"Yes","Hibernaculum","2012",8,237
+"Walk-in Cave",59.7,-112.2,2012-08-25,290,"Yes","Hibernaculum","2012",8,238
+"Walk-in Cave",59.7,-112.2,2012-08-26,790,"Yes","Hibernaculum","2012",8,239
+"Walk-in Cave",59.7,-112.2,2012-08-27,751,"Yes","Hibernaculum","2012",8,240
+"Walk-in Cave",59.7,-112.2,2012-08-28,560,"Yes","Hibernaculum","2012",8,241
+"Walk-in Cave",59.7,-112.2,2012-08-29,342,"Yes","Hibernaculum","2012",8,242
+"Walk-in Cave",59.7,-112.2,2012-08-30,57,"Yes","Hibernaculum","2012",8,243
+"Walk-in Cave",59.7,-112.2,2012-08-31,122,"Yes","Hibernaculum","2012",8,244
+"Walk-in Cave",59.7,-112.2,2012-09-01,417,"Yes","Hibernaculum","2012",9,245
+"Walk-in Cave",59.7,-112.2,2012-09-02,125,"Yes","Hibernaculum","2012",9,246
+"Walk-in Cave",59.7,-112.2,2012-09-03,159,"Yes","Hibernaculum","2012",9,247
+"Walk-in Cave",59.7,-112.2,2012-09-04,452,"Yes","Hibernaculum","2012",9,248
+"Walk-in Cave",59.7,-112.2,2012-09-05,229,"Yes","Hibernaculum","2012",9,249
+"Walk-in Cave",59.7,-112.2,2012-09-06,578,"Yes","Hibernaculum","2012",9,250
+"Walk-in Cave",59.7,-112.2,2012-09-07,355,"Yes","Hibernaculum","2012",9,251
+"Walk-in Cave",59.7,-112.2,2012-09-08,430,"Yes","Hibernaculum","2012",9,252
+"Walk-in Cave",59.7,-112.2,2012-09-09,532,"Yes","Hibernaculum","2012",9,253
+"Walk-in Cave",59.7,-112.2,2012-09-10,16,"Yes","Hibernaculum","2012",9,254
+"Walk-in Cave",59.7,-112.2,2012-09-11,14,"Yes","Hibernaculum","2012",9,255
+"Walk-in Cave",59.7,-112.2,2012-09-12,60,"Yes","Hibernaculum","2012",9,256
+"Walk-in Cave",59.7,-112.2,2012-09-13,113,"Yes","Hibernaculum","2012",9,257
+"Walk-in Cave",59.7,-112.2,2012-09-14,57,"Yes","Hibernaculum","2012",9,258
+"Walk-in Cave",59.7,-112.2,2012-09-15,52,"Yes","Hibernaculum","2012",9,259
+"Walk-in Cave",59.7,-112.2,2012-09-16,73,"Yes","Hibernaculum","2012",9,260
+"Walk-in Cave",59.7,-112.2,2012-09-17,115,"Yes","Hibernaculum","2012",9,261
+"Walk-in Cave",59.7,-112.2,2012-09-18,116,"Yes","Hibernaculum","2012",9,262
+"Walk-in Cave",59.7,-112.2,2012-09-19,93,"Yes","Hibernaculum","2012",9,263
+"Walk-in Cave",59.7,-112.2,2012-09-20,97,"Yes","Hibernaculum","2012",9,264
+"Walk-in Cave",59.7,-112.2,2012-09-21,236,"Yes","Hibernaculum","2012",9,265
+"Walk-in Cave",59.7,-112.2,2012-09-22,160,"Yes","Hibernaculum","2012",9,266
+"Walk-in Cave",59.7,-112.2,2012-09-23,156,"Yes","Hibernaculum","2012",9,267
+"Walk-in Cave",59.7,-112.2,2012-09-24,260,"Yes","Hibernaculum","2012",9,268
+"Walk-in Cave",59.7,-112.2,2012-09-25,140,"Yes","Hibernaculum","2012",9,269
+"Walk-in Cave",59.7,-112.2,2012-09-26,89,"Yes","Hibernaculum","2012",9,270
+"Walk-in Cave",59.7,-112.2,2012-09-27,108,"Yes","Hibernaculum","2012",9,271
+"Walk-in Cave",59.7,-112.2,2012-09-28,15,"Yes","Hibernaculum","2012",9,272
+"Walk-in Cave",59.7,-112.2,2012-09-29,0,"Yes","Hibernaculum","2012",9,273
+"Walk-in Cave",59.7,-112.2,2012-09-30,0,"Yes","Hibernaculum","2012",9,274
+"Walk-in Cave",59.7,-112.2,2012-10-01,0,"Yes","Hibernaculum","2012",10,275
+"Walk-in Cave",59.7,-112.2,2012-10-02,0,"Yes","Hibernaculum","2012",10,276
+"Walk-in Cave",59.7,-112.2,2012-10-03,0,"Yes","Hibernaculum","2012",10,277
+"Walk-in Cave",59.7,-112.2,2012-10-16,44,"Yes","Hibernaculum","2012",10,290
+"Walk-in Cave",59.7,-112.2,2012-10-17,65,"Yes","Hibernaculum","2012",10,291
+"Walk-in Cave",59.7,-112.2,2012-10-18,32,"Yes","Hibernaculum","2012",10,292
+"Walk-in Cave",59.7,-112.2,2012-10-19,47,"Yes","Hibernaculum","2012",10,293
+"Walk-in Cave",59.7,-112.2,2012-10-20,33,"Yes","Hibernaculum","2012",10,294
+"Walk-in Cave",59.7,-112.2,2012-10-21,4,"Yes","Hibernaculum","2012",10,295
+"Walk-in Cave",59.7,-112.2,2012-10-22,0,"Yes","Hibernaculum","2012",10,296
+"Walk-in Cave",59.7,-112.2,2012-10-23,0,"Yes","Hibernaculum","2012",10,297
+"Walk-in Cave",59.7,-112.2,2012-10-24,0,"Yes","Hibernaculum","2012",10,298
+"Walk-in Cave",59.7,-112.2,2012-10-25,0,"Yes","Hibernaculum","2012",10,299
+"Walk-in Cave",59.7,-112.2,2012-10-26,0,"Yes","Hibernaculum","2012",10,300
+"WBBP",59.74,-112.22,2011-05-16,226,"Yes","Foraging site","2011",5,136
+"WBBP",59.74,-112.22,2011-05-17,347,"Yes","Foraging site","2011",5,137
+"WBBP",59.74,-112.22,2011-05-18,203,"Yes","Foraging site","2011",5,138
+"WBBP",59.74,-112.22,2011-05-19,168,"Yes","Foraging site","2011",5,139
+"WBBP",59.74,-112.22,2011-05-20,163,"Yes","Foraging site","2011",5,140
+"WBBP",59.74,-112.22,2011-05-21,67,"Yes","Foraging site","2011",5,141
+"WBBP",59.74,-112.22,2011-05-22,12,"Yes","Foraging site","2011",5,142
+"WBBP",59.74,-112.22,2011-05-23,33,"Yes","Foraging site","2011",5,143
+"WBBP",59.74,-112.22,2011-05-24,20,"Yes","Foraging site","2011",5,144
+"WBBP",59.74,-112.22,2011-05-25,55,"Yes","Foraging site","2011",5,145
+"WBBP",59.74,-112.22,2011-05-26,52,"Yes","Foraging site","2011",5,146
+"WBBP",59.74,-112.22,2011-05-27,81,"Yes","Foraging site","2011",5,147
+"WBBP",59.74,-112.22,2011-05-28,43,"Yes","Foraging site","2011",5,148
+"WBBP",59.74,-112.22,2011-05-29,45,"Yes","Foraging site","2011",5,149
+"WBBP",59.74,-112.22,2011-05-30,144,"Yes","Foraging site","2011",5,150
+"WBBP",59.74,-112.22,2011-05-31,425,"Yes","Foraging site","2011",5,151
+"WBBP",59.74,-112.22,2011-06-01,383,"Yes","Foraging site","2011",6,152
+"WBBP",59.74,-112.22,2011-06-02,2,"Yes","Foraging site","2011",6,153
+"WBBP",59.74,-112.22,2011-06-03,8,"Yes","Foraging site","2011",6,154
+"WBBP",59.74,-112.22,2011-06-04,11,"Yes","Foraging site","2011",6,155
+"WBBP",59.74,-112.22,2011-06-05,19,"Yes","Foraging site","2011",6,156
+"WBBP",59.74,-112.22,2011-06-06,0,"Yes","Foraging site","2011",6,157
+"WBBP",59.74,-112.22,2011-06-09,323,"Yes","Foraging site","2011",6,160
+"WBBP",59.74,-112.22,2011-06-10,225,"Yes","Foraging site","2011",6,161
+"WBBP",59.74,-112.22,2011-06-11,81,"Yes","Foraging site","2011",6,162
+"WBBP",59.74,-112.22,2011-06-12,143,"Yes","Foraging site","2011",6,163
+"WBBP",59.74,-112.22,2011-06-13,138,"Yes","Foraging site","2011",6,164
+"WBBP",59.74,-112.22,2011-06-14,136,"Yes","Foraging site","2011",6,165
+"WBBP",59.74,-112.22,2011-06-15,192,"Yes","Foraging site","2011",6,166
+"WBBP",59.74,-112.22,2011-06-16,0,"Yes","Foraging site","2011",6,167
+"WBBP",59.74,-112.22,2011-06-17,0,"Yes","Foraging site","2011",6,168
+"WBBP",59.74,-112.22,2011-06-18,0,"Yes","Foraging site","2011",6,169
+"WBBP",59.74,-112.22,2011-06-19,0,"Yes","Foraging site","2011",6,170
+"WBBP",59.74,-112.22,2011-06-20,145,"Yes","Foraging site","2011",6,171
+"WBBP",59.74,-112.22,2011-06-21,122,"Yes","Foraging site","2011",6,172
+"WBBP",59.74,-112.22,2011-06-22,43,"Yes","Foraging site","2011",6,173
+"WBBP",59.74,-112.22,2011-06-23,59,"Yes","Foraging site","2011",6,174
+"WBBP",59.74,-112.22,2011-06-24,71,"Yes","Foraging site","2011",6,175
+"WBBP",59.74,-112.22,2011-06-25,45,"Yes","Foraging site","2011",6,176
+"WBBP",59.74,-112.22,2011-06-26,24,"Yes","Foraging site","2011",6,177
+"WBBP",59.74,-112.22,2011-06-27,45,"Yes","Foraging site","2011",6,178
+"WBBP",59.74,-112.22,2011-06-28,74,"Yes","Foraging site","2011",6,179
+"WBBP",59.74,-112.22,2011-06-29,39,"Yes","Foraging site","2011",6,180
+"WBBP",59.74,-112.22,2011-06-30,10,"Yes","Foraging site","2011",6,181
+"WBBP",59.74,-112.22,2011-07-01,11,"Yes","Foraging site","2011",7,182
+"WBBP",59.74,-112.22,2011-07-02,15,"Yes","Foraging site","2011",7,183
+"WBBP",59.74,-112.22,2011-07-03,34,"Yes","Foraging site","2011",7,184
+"WBBP",59.74,-112.22,2011-07-04,57,"Yes","Foraging site","2011",7,185
+"WBBP",59.74,-112.22,2011-07-05,21,"Yes","Foraging site","2011",7,186
+"WBBP",59.74,-112.22,2011-07-06,42,"Yes","Foraging site","2011",7,187
+"WBBP",59.74,-112.22,2011-07-07,32,"Yes","Foraging site","2011",7,188
+"WBBP",59.74,-112.22,2011-07-08,57,"Yes","Foraging site","2011",7,189
+"WBBP",59.74,-112.22,2011-07-09,67,"Yes","Foraging site","2011",7,190
+"WBBP",59.74,-112.22,2011-07-10,93,"Yes","Foraging site","2011",7,191
+"WBBP",59.74,-112.22,2011-07-11,147,"Yes","Foraging site","2011",7,192
+"WBBP",59.74,-112.22,2011-07-12,152,"Yes","Foraging site","2011",7,193
+"WBBP",59.74,-112.22,2011-07-13,149,"Yes","Foraging site","2011",7,194
+"WBBP",59.74,-112.22,2011-07-14,111,"Yes","Foraging site","2011",7,195
+"WBBP",59.74,-112.22,2011-07-15,70,"Yes","Foraging site","2011",7,196
+"WBBP",59.74,-112.22,2011-07-16,54,"Yes","Foraging site","2011",7,197
+"WBBP",59.74,-112.22,2011-07-17,102,"Yes","Foraging site","2011",7,198
+"WBBP",59.74,-112.22,2011-07-18,124,"Yes","Foraging site","2011",7,199
+"WBBP",59.74,-112.22,2011-07-19,181,"Yes","Foraging site","2011",7,200
+"WBBP",59.74,-112.22,2011-07-20,122,"Yes","Foraging site","2011",7,201
+"WBBP",59.74,-112.22,2011-07-21,93,"Yes","Foraging site","2011",7,202
+"WBBP",59.74,-112.22,2011-07-22,184,"Yes","Foraging site","2011",7,203
+"WBBP",59.74,-112.22,2011-07-23,203,"Yes","Foraging site","2011",7,204
+"WBBP",59.74,-112.22,2011-07-24,243,"Yes","Foraging site","2011",7,205
+"WBBP",59.74,-112.22,2011-07-25,314,"Yes","Foraging site","2011",7,206
+"WBBP",59.74,-112.22,2011-07-26,275,"Yes","Foraging site","2011",7,207
+"WBBP",59.74,-112.22,2011-07-27,181,"Yes","Foraging site","2011",7,208
+"WBBP",59.74,-112.22,2011-07-28,154,"Yes","Foraging site","2011",7,209
+"WBBP",59.74,-112.22,2011-07-29,137,"Yes","Foraging site","2011",7,210
+"WBBP",59.74,-112.22,2011-07-30,172,"Yes","Foraging site","2011",7,211
+"WBBP",59.74,-112.22,2011-07-31,162,"Yes","Foraging site","2011",7,212
+"WBBP",59.74,-112.22,2011-08-01,154,"Yes","Foraging site","2011",8,213
+"WBBP",59.74,-112.22,2011-08-02,179,"Yes","Foraging site","2011",8,214
+"WBBP",59.74,-112.22,2011-08-03,127,"Yes","Foraging site","2011",8,215
+"WBBP",59.74,-112.22,2011-08-04,397,"Yes","Foraging site","2011",8,216
+"WBBP",59.74,-112.22,2011-08-05,560,"Yes","Foraging site","2011",8,217
+"WBBP",59.74,-112.22,2011-08-06,573,"Yes","Foraging site","2011",8,218
+"WBBP",59.74,-112.22,2011-08-07,664,"Yes","Foraging site","2011",8,219
+"WBBP",59.74,-112.22,2011-08-08,744,"Yes","Foraging site","2011",8,220
+"WBBP",59.74,-112.22,2011-08-09,448,"Yes","Foraging site","2011",8,221
+"WBBP",59.74,-112.22,2011-08-10,0,"Yes","Foraging site","2011",8,222
+"WBBP",59.74,-112.22,2011-08-11,121,"Yes","Foraging site","2011",8,223
+"WBBP",59.74,-112.22,2011-08-12,0,"Yes","Foraging site","2011",8,224
+"WBBP",59.74,-112.22,2011-08-13,0,"Yes","Foraging site","2011",8,225
+"WBBP",59.74,-112.22,2011-08-14,0,"Yes","Foraging site","2011",8,226
+"WBBP",59.74,-112.22,2011-08-15,0,"Yes","Foraging site","2011",8,227
+"WBBP",59.74,-112.22,2011-08-16,0,"Yes","Foraging site","2011",8,228
+"WBBP",59.74,-112.22,2011-08-17,0,"Yes","Foraging site","2011",8,229
+"WBBP",59.74,-112.22,2011-08-18,0,"Yes","Foraging site","2011",8,230
+"WBBP",59.74,-112.22,2011-08-19,0,"Yes","Foraging site","2011",8,231
+"WBBP",59.74,-112.22,2011-08-20,0,"Yes","Foraging site","2011",8,232
+"WBBP",59.74,-112.22,2011-08-21,148,"Yes","Foraging site","2011",8,233
+"WBBP",59.74,-112.22,2011-08-22,190,"Yes","Foraging site","2011",8,234
+"WBBP",59.74,-112.22,2011-08-23,0,"Yes","Foraging site","2011",8,235
+"WBBP",59.74,-112.22,2011-08-24,0,"Yes","Foraging site","2011",8,236
+"WBBP",59.74,-112.22,2011-08-25,0,"Yes","Foraging site","2011",8,237
+"WBBP",59.74,-112.22,2011-08-26,0,"Yes","Foraging site","2011",8,238
+"WBBP",59.74,-112.22,2011-08-28,109,"Yes","Foraging site","2011",8,240
+"WBBP",59.74,-112.22,2011-08-29,80,"Yes","Foraging site","2011",8,241
+"WBBP",59.74,-112.22,2011-08-30,29,"Yes","Foraging site","2011",8,242
+"WBBP",59.74,-112.22,2011-08-31,14,"Yes","Foraging site","2011",8,243
+"WBBP",59.74,-112.22,2011-09-01,3,"Yes","Foraging site","2011",9,244
+"WBBP",59.74,-112.22,2011-09-02,23,"Yes","Foraging site","2011",9,245
+"WBBP",59.74,-112.22,2011-09-03,112,"Yes","Foraging site","2011",9,246
+"WBBP",59.74,-112.22,2011-09-04,202,"Yes","Foraging site","2011",9,247
+"WBBP",59.74,-112.22,2011-09-05,80,"Yes","Foraging site","2011",9,248
+"WBBP",59.74,-112.22,2011-09-06,192,"Yes","Foraging site","2011",9,249
+"WBBP",59.74,-112.22,2011-09-07,23,"Yes","Foraging site","2011",9,250
+"WBBP",59.74,-112.22,2011-09-08,17,"Yes","Foraging site","2011",9,251
+"WBBP",59.74,-112.22,2011-09-09,55,"Yes","Foraging site","2011",9,252
+"WBBP",59.74,-112.22,2011-09-10,6,"Yes","Foraging site","2011",9,253
+"WBBP",59.74,-112.22,2011-09-11,1,"Yes","Foraging site","2011",9,254
+"WBBP",59.74,-112.22,2011-09-12,0,"Yes","Foraging site","2011",9,255
+"WBBP",59.74,-112.22,2011-09-13,0,"Yes","Foraging site","2011",9,256
+"WBBP",59.74,-112.22,2011-09-14,7,"Yes","Foraging site","2011",9,257
+"WBBP",59.74,-112.22,2011-09-15,2,"Yes","Foraging site","2011",9,258
+"WBBP",59.74,-112.22,2011-09-16,1,"Yes","Foraging site","2011",9,259
+"WBBP",59.74,-112.22,2011-09-17,7,"Yes","Foraging site","2011",9,260
+"WBBP",59.74,-112.22,2011-09-18,4,"Yes","Foraging site","2011",9,261
+"WBBP",59.74,-112.22,2011-09-19,1,"Yes","Foraging site","2011",9,262
+"WBBP",59.74,-112.22,2011-09-20,5,"Yes","Foraging site","2011",9,263
+"WBBP",59.74,-112.22,2011-09-21,4,"Yes","Foraging site","2011",9,264
+"WBBP",59.74,-112.22,2011-09-22,1,"Yes","Foraging site","2011",9,265
+"WBBP",59.74,-112.22,2011-09-23,4,"Yes","Foraging site","2011",9,266
+"WBBP",59.74,-112.22,2011-09-24,0,"Yes","Foraging site","2011",9,267
+"WBBP",59.74,-112.22,2011-09-25,15,"Yes","Foraging site","2011",9,268
+"WBBP",59.74,-112.22,2011-09-26,1,"Yes","Foraging site","2011",9,269
+"WBBP",59.74,-112.22,2011-09-27,4,"Yes","Foraging site","2011",9,270
+"WBBP",59.74,-112.22,2011-09-28,0,"Yes","Foraging site","2011",9,271
+"WBBP",59.74,-112.22,2011-09-29,2,"Yes","Foraging site","2011",9,272
+"WBBP",59.74,-112.22,2011-09-30,0,"Yes","Foraging site","2011",9,273
+"WBBP",59.74,-112.22,2011-10-01,0,"Yes","Foraging site","2011",10,274
+"WBBP",59.74,-112.22,2011-10-02,0,"Yes","Foraging site","2011",10,275
+"WBBP",59.74,-112.22,2011-10-03,0,"Yes","Foraging site","2011",10,276
+"WBBP",59.74,-112.22,2011-10-04,0,"Yes","Foraging site","2011",10,277
+"WBBP",59.74,-112.22,2011-10-05,0,"Yes","Foraging site","2011",10,278
+"WBBP",59.74,-112.22,2011-10-06,1,"Yes","Foraging site","2011",10,279
+"WBBP",59.74,-112.22,2011-10-07,0,"Yes","Foraging site","2011",10,280
+"WBBP",59.74,-112.22,2011-10-08,0,"Yes","Foraging site","2011",10,281
+"WBBP",59.74,-112.22,2011-10-09,0,"Yes","Foraging site","2011",10,282
