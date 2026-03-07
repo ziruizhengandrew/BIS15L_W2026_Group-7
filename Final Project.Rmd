@@ -1,9 +1,11 @@
 ---
-title: "Shinyapp_"
+title: "Bat Project"
 author: "Zirui Zheng"
 date: "2026-02-28"
 output: html_document
 ---
+
+
 
 ```{r}
 library(shiny)
@@ -17,7 +19,7 @@ library(tidyverse)
 ```
 
 ```{r}
-
+project_palette <- paletteer_d("calecopal::superbloom1")
 capture <- read.csv("Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
   na.strings = c("", " ")
 )
@@ -160,6 +162,7 @@ server <- function(input, output) {
            aes_string(x = input$forearm_x,
                       y = "Forearmlengthmm",
                       fill = input$forearm_x)) +
+      scale_fill_manual(values=project_palette)+
       geom_boxplot() +
       theme_minimal() +
       labs(y = "Forearm Length (mm)")
@@ -177,6 +180,7 @@ server <- function(input, output) {
            aes_string(x = input$ear_x,
                       y = "Earlengthmm",
                       fill = input$ear_x)) +
+      scale_fill_manual(values=project_palette)+
       geom_boxplot() +
       theme_minimal() +
       labs(y = "Ear Length (mm)")
@@ -193,6 +197,7 @@ server <- function(input, output) {
     ggplot(capture,
            aes(Forearmlengthmm,
                Earlengthmm)) +
+      scale_fill_manual(values=project_palette)+
       geom_point() +
       geom_smooth(method = "lm",
                   se = FALSE,

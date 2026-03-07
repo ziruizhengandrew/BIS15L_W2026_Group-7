@@ -1,0 +1,54 @@
+---
+title: "DataCleaning"
+output: html_document
+---
+
+```{r}
+capture <- read.csv("Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
+  na.strings = c("", " ")
+)
+
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+
+# -------- LOAD CAPTURE DATA --------
+capture_raw <- read.csv(
+  "Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
+  na.strings = c("", " ")
+)
+
+
+# Convert to proper types
+capture_raw$Region <- as.factor(capture_raw$Region)
+capture_raw$Sex <- as.factor(capture_raw$Sex)
+capture_raw$Ageclass <- as.factor(capture_raw$Ageclass)
+capture_raw$Reproductivestatus <- as.factor(capture_raw$Reproductivestatus)
+
+# Remove NA in variables of interest
+capture_clean <- capture_raw %>%
+  filter(
+    !is.na(Region),
+    !is.na(Sex),
+    !is.na(Ageclass),
+    !is.na(Reproductivestatus),
+    !is.na(Forearmlengthmm),
+    !is.na(Earlengthmm)
+  )
+
+# -------- REMOVE EAR LENGTH OUTLIERS (IQR method) --------
+Q3 <- quantile(capture_clean$Earlengthmm, 0.75)
+IQR_val <- IQR(capture_clean$Earlengthmm)
+
+upper_bound <- Q3 + 1.5 * IQR_val
+
+capture <- capture_clean %>%
+  filter(Earlengthmm <= upper_bound)
+
+# Convert categorical variables
+capture$Region <- as.factor(capture$Region)
+capture$Sex <- as.factor(capture$Sex)
+capture$Ageclass <- as.factor(capture$Ageclass)
+capture$Reproductivestatus <- as.factor(capture$Reproductivestatus)
+```
+

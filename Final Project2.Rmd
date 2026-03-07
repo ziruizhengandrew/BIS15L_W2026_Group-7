@@ -1,0 +1,29 @@
+---
+title: "Bat Project"
+author:"Darius Arasteh"
+
+output: html_document
+---
+
+#Loading Libraries
+
+
+```{r}
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+library(leaflet)
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+
+```
+
+
+#Setting Up for Shiny App
+```{r}
+project_palette <- paletteer_d("calecopal::superbloom1")
+capture <- read.csv("bat_data_cleaned.csv")
+
+```
+
