@@ -50,5 +50,115 @@ capture$Region <- as.factor(capture$Region)
 capture$Sex <- as.factor(capture$Sex)
 capture$Ageclass <- as.factor(capture$Ageclass)
 capture$Reproductivestatus <- as.factor(capture$Reproductivestatus)
+
+#Change Names
+capture_clean <-capture %>% 
+rename(
+    date = Night_date,
+    lat = Latitude,
+    lon = Longitude,
+    region = Region,
+    site = Site,
+    band_id = BandID,
+    species = Species,
+    sex = Sex,
+    ageclass = Ageclass,
+    mass = Massg,
+    forearm = Forearmlengthmm,
+    ear = Earlengthmm,
+    repro_status = Reproductivestatus,
+    capture_time = Capturetime,
+    release_time = Releasetime
+  )
+
+# Convert date
+capture_clean$date <- as.Date(capture_clean$date, format = "%m/%d/%y")
+
+# Convert numeric columns
+capture_clean$lat <- as.numeric(capture_clean$lat)
+capture_clean$lon <- as.numeric(capture_clean$lon)
+capture_clean$mass <- as.numeric(capture_clean$mass)
+capture_clean$forearm <- as.numeric(capture_clean$forearm)
+capture_clean$ear <- as.numeric(capture_clean$ear)
+
+
+# Remove rows missing coordinates
+capture_clean <- capture_clean %>%
+  filter(!is.na(lat), !is.na(lon))
+
+#Add a Season column for phenology
+
+capture_clean <- capture_clean %>%
+  mutate(
+    month = as.numeric(format(date, "%m")),
+    season = case_when(
+      month %in% c(12, 1, 2) ~ "Winter",
+      month %in% c(3, 4, 5) ~ "Spring",
+      month %in% c(6, 7, 8) ~ "Summer",
+      month %in% c(9, 10, 11) ~ "Fall"
+    )
+  )
+
+# Save cleaned dataset
+write.csv(capture_clean, "Data/capture_cleaned.csv", row.names = FALSE)
+
+```
+
+
+
+```{r}
+acoustic <- read.csv("Data/NWTMyotisAcousticRecords_ReimerBarclay2023.csv")
+
+#Make names into data
+names(acoustic) <- make.names(names(acoustic))
+
+# Rename columns
+acoustic <- acoustic %>%
+  rename(
+    site = Site,
+    lat = Lat,
+    lon = Lon,
+    date = night_date,
+    myotis = Myotis,
+    detector_active = Detector.Active,
+    site_type = Site.type
+  )
+
+# Convert date (MM/DD/YYYY format)
+acoustic$date <- as.Date(acoustic$date, format = "%m/%d/%Y")
+
+# Convert Myotis to numeric
+acoustic$myotis <- as.numeric(acoustic$myotis)
+
+# Keep only active detector nights
+acoustic_clean <- acoustic %>%
+  filter(detector_active == "Yes")
+
+# Replace missing counts with 0 (only for active nights)
+acoustic_clean$myotis[is.na(acoustic_clean$myotis)] <- 0
+
+# Create useful time columns 
+acoustic_clean$year  <- format(acoustic_clean$date, "%Y")
+acoustic_clean$month <- format(acoustic_clean$date, "%m")
+acoustic_clean$doy   <- format(acoustic_clean$date, "%j")  # day of year
+
+# Convert to numeric if needed
+acoustic_clean$month <- as.numeric(acoustic_clean$month)
+acoustic_clean$doy   <- as.numeric(acoustic_clean$doy)
+
+#Add Seasonal Data
+acoustic_clean<-acoustic_clean %>%   
+mutate(
+    month = as.numeric(format(date, "%m")),
+    season = case_when(
+      month %in% c(12, 1, 2) ~ "Winter",
+      month %in% c(3, 4, 5) ~ "Spring",
+      month %in% c(6, 7, 8) ~ "Summer",
+      month %in% c(9, 10, 11) ~ "Fall"
+    )
+  )
+
+# Save cleaned file
+write.csv(acoustic_clean, "Data/acoustic_cleaned.csv", row.names = FALSE)
 ```
 
