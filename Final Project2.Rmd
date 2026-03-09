@@ -41,16 +41,8 @@ menuItem("Capture Map 📍", tabName = "map")
 
 dashboardBody(
 
-tags$head(
-tags$style(HTML("
-.main-header .logo {
-background-color: #5D9D61 !important;
-color: white !important;
-}
-.main-header .navbar {
-background-color: #5D9D61 !important;
-}
-"))
+  tags$head(
+  tags$style(HTML(".main-header .logo {background-color: #5D9D61 !important;color: white !important;}.main-header .navbar {background-color: #5D9D61 !important;}"))
 ),
 
 tabItems(
@@ -59,32 +51,32 @@ tabItems(
 tabItem(tabName = "season",
 fluidRow(
 
-box(width=4,
-selectInput("season_y","Variable",
-choices=c("Forearm Length"="forearm",
-"Ear Length"="ear",
-"Mass"="mass"))
+  box(width=4,
+  selectInput("season_y","Variable",
+  choices=c("Forearm Length"="forearm",
+  "Ear Length"="ear",
+  "Mass"="mass"))
 ),
 
 box(width=8,
-plotOutput("season_plot"),
-verbatimTextOutput("season_text"))
+  plotOutput("season_plot"),
+  verbatimTextOutput("season_text"))
 )),
 
 # ---------------- SEX ----------------
 tabItem(tabName = "sex",
 fluidRow(
 
-box(width=4,
-selectInput("sex_y","Variable",
-choices=c("Forearm Length"="forearm",
-"Ear Length"="ear",
-"Mass"="mass"))
+  box(width=4,
+  selectInput("sex_y","Variable",
+  choices=c("Forearm Length"="forearm",
+  "Ear Length"="ear",
+  "Mass"="mass"))
 ),
 
 box(width=8,
-plotOutput("sex_plot"),
-verbatimTextOutput("sex_text"))
+  plotOutput("sex_plot"),
+  verbatimTextOutput("sex_text"))
 )),
 
 # ---------------- REGION ----------------
@@ -92,15 +84,15 @@ tabItem(tabName = "region",
 fluidRow(
 
 box(width=4,
-selectInput("region_y","Variable",
-choices=c("Forearm Length"="forearm",
-"Ear Length"="ear",
-"Mass"="mass"))
+  selectInput("region_y","Variable",
+  choices=c("Forearm Length"="forearm",
+  "Ear Length"="ear",
+  "Mass"="mass"))
 ),
 
 box(width=8,
-plotOutput("region_plot"),
-verbatimTextOutput("region_text"))
+  plotOutput("region_plot"),
+  verbatimTextOutput("region_text"))
 )),
 
 # ---------------- SCALING ----------------
@@ -109,27 +101,27 @@ fluidRow(
 
 box(width=4,
 
-selectInput("x_var","X Variable",
-choices=c("Forearm Length"="forearm",
-"Ear Length"="ear")),
+  selectInput("x_var","X Variable",
+  choices=c("Forearm Length"="forearm",
+  "Ear Length"="ear")),
 
 selectInput("y_var","Y Variable",
-choices=c("Mass"="mass",
-"Ear Length"="ear",
-"Forearm Length"="forearm"))
+  choices=c("Mass"="mass",
+  "Ear Length"="ear",
+  "Forearm Length"="forearm"))
 
 ),
 
 box(width=8,
-plotOutput("scaling_plot"),
-verbatimTextOutput("scaling_text"))
+  plotOutput("scaling_plot"),
+  verbatimTextOutput("scaling_text"))
 )),
 
 # ---------------- MAP ----------------
 tabItem(tabName="map",
 fluidRow(
-box(width=12,
-leafletOutput("capture_map",height=600))
+  box(width=12,
+  leafletOutput("capture_map",height=600))
 ))
 
 )))
@@ -287,23 +279,47 @@ cat("\nR-squared:",round(summary_model$r.squared,3))
 # -------- MAP --------
 output$capture_map <- renderLeaflet({
 
-leaflet(data=capture) |>
+pal <- colorFactor(
+  palette = as.character(project_palette),
+  domain = capture$season
+)
+
+leaflet(data = capture) |>
+
 addProviderTiles(providers$CartoDB.Voyager) |>
 
 addCircleMarkers(
-lng=~lon,
-lat=~lat,
-radius=6,
-color=project_palette[3],
-fillOpacity=.8,
-stroke=FALSE,
+  lng = ~lon,
+  lat = ~lat,
+  
+  radius = ~mass/3,   # scale by bat mass
+  
+  color = ~pal(season),
+  fillOpacity = 0.85,
+  stroke = TRUE,
+  weight = 1,
+  
+  label = ~paste0(
+    site, " (", season, ")"
+  ),
+  
+  popup = ~paste0(
+    "<b>Site:</b> ", site,
+    "<br><b>Region:</b> ", region,
+    "<br><b>Season:</b> ", season,
+    "<br><b>Mass:</b> ", mass, " g",
+    "<br><b>Forearm:</b> ", forearm, " mm",
+    "<br><b>Ear:</b> ", ear, " mm"
+  ),
+  
+  clusterOptions = markerClusterOptions()
+) |>
 
-popup=~paste0(
-"<b>Site:</b> ",site,
-"<br><b>Region:</b> ",region,
-"<br><b>Season:</b> ",season,
-"<br><b>Mass:</b> ",mass
-)
+addLegend(
+  "bottomright",
+  pal = pal,
+  values = ~season,
+  title = "Season"
 )
 
 })

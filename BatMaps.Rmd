@@ -16,6 +16,8 @@ library(ggthemes)
 #install.packages("ggmap")
 library(ggmap)
 #install.packages("leaflet")
+install.packages("ggrepel")
+library(ggrepel)
 library(leaflet)
 ```
 
@@ -28,37 +30,72 @@ register_stadiamaps("98ed9db5-d37d-4aee-af77-e9e3f4d0f242", write = FALSE)
 ```
 
 
-cleaning data:
 ```{r}
-capture <- read.csv("Data/")
+library(ggmap)
+library(tidyverse)
 
+capture <- read.csv("Data/capture_cleaned.csv")
 
-```
-
-
-
-getting min and max:
-```{r}
+# Check coordinate range
 capture %>% 
   select(lat, lon) %>% 
   summary()
-```
-setting bounding box:
-```{r}
-lati <- c(59.7, 60.1)
-long <-c(-112.8, -112.2)
-batbox <- make_bbox(long, lati, f=0.03)
+
+# Bounding box based on data
+batbox <- make_bbox(
+  lon = capture$lon,
+  lat = capture$lat,
+  f = 0.08
+)
+
+# Terrain basemap
+map1 <- get_stadiamap(
+  bbox = batbox,
+  maptype = "stamen_terrain",
+  zoom = 7
+)
+
+ggmap(map1) +
+
+
+# Points with white outline so they pop off the map
+geom_point(
+  data = capture,
+  aes(lon, lat, fill = season),
+  shape = 21,
+  size = 3.5,
+  color = "white",
+  stroke = 0.7,
+  alpha = 0.95
+) +
+
+geom_text(
+  data = capture,
+  aes(lon, lat, label = region),
+  size = 3,
+  fontface = "bold",
+  check_overlap = TRUE,
+  vjust = -1
+) +
+
+scale_fill_brewer(palette = "Dark2") +
+
+labs(
+  title = "Bat Capture Sites and Sampling Density",
+  subtitle = "Field sampling locations colored by season",
+  x = "Longitude",
+  y = "Latitude",
+  fill = "Season"
+) +
+
+theme_minimal() +
+
+theme(
+  plot.title = element_text(face = "bold", size = 16),
+  plot.subtitle = element_text(size = 12),
+  legend.position = "right"
+)
 ```
 
-```{r}
-map1 <- get_stadiamap(batbox, maptype="stamen_terrain", zoom=12)
-```
-```{r}
-ggmap(map1) +
-  geom_point(data=capture, aes(lon, lat), size=3, color="maroon", alpha=.8)+
-  theme_stata()+
-  theme(plot.title= element_text(face="bold", size= 12))+
-  labs(x="Longitude", y="Latitude", title="Data Sites")
-```
 
 
