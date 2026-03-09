@@ -6,222 +6,180 @@ output: html_document
 ---
 
 
-
 ```{r}
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
-library(leaflet)
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
 
-```
+capture <- read.csv("Data/capture_cleaned.csv")
 
-```{r}
-project_palette <- paletteer_d("calecopal::superbloom1")
-capture <- read.csv("Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
-  na.strings = c("", " ")
-)
+capture$date <- as.Date(capture$date)
+capture$month <- as.numeric(format(capture$date,"%m"))
 
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-
-# -------- LOAD CAPTURE DATA --------
-capture_raw <- read.csv(
-  "Data/NWTMyotisCaptureRecords_ReimerBarclay2023.csv",
-  na.strings = c("", " ")
-)
-
-
-# Convert to proper types
-capture_raw$Region <- as.factor(capture_raw$Region)
-capture_raw$Sex <- as.factor(capture_raw$Sex)
-capture_raw$Ageclass <- as.factor(capture_raw$Ageclass)
-capture_raw$Reproductivestatus <- as.factor(capture_raw$Reproductivestatus)
-
-# Remove NA in variables of interest
-capture_clean <- capture_raw %>%
-  filter(
-    !is.na(Region),
-    !is.na(Sex),
-    !is.na(Ageclass),
-    !is.na(Reproductivestatus),
-    !is.na(Forearmlengthmm),
-    !is.na(Earlengthmm)
-  )
-
-# -------- REMOVE EAR LENGTH OUTLIERS (IQR method) --------
-Q3 <- quantile(capture_clean$Earlengthmm, 0.75)
-IQR_val <- IQR(capture_clean$Earlengthmm)
-
-upper_bound <- Q3 + 1.5 * IQR_val
-
-capture <- capture_clean %>%
-  filter(Earlengthmm <= upper_bound)
-
-# Convert categorical variables
-capture$Region <- as.factor(capture$Region)
-capture$Sex <- as.factor(capture$Sex)
-capture$Ageclass <- as.factor(capture$Ageclass)
-capture$Reproductivestatus <- as.factor(capture$Reproductivestatus)
+capture$sex <- as.factor(capture$sex)
+capture$age <- as.factor(capture$age)
+capture$site <- as.factor(capture$site)
+capture$repro_status <- as.factor(capture$repro_status)
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Capture Morphology Analysis"),
-  
-  dashboardSidebar(
-    sidebarMenu(
-      menuItem("Forearm Analysis", tabName = "forearm"),
-      menuItem("Ear Analysis", tabName = "ear"),
-      menuItem("Morphological Scaling", tabName = "scaling"),
-      menuItem("Categorical Associations", tabName = "cat")
-    )
-  ),
-  
-  dashboardBody(
-    tabItems(
-      # -------- FOREARM TAB --------
-      tabItem(tabName = "forearm",
-        fluidRow(
-          box(width = 4,
-              selectInput("forearm_x",
-                          "Group Variable",
-                          choices = c("Sex",
-                                      "Ageclass",
-                                      "Region",
-                                      "Reproductivestatus"))
-          ),
-          box(width = 8,
-              plotOutput("forearm_plot"),
-              verbatimTextOutput("forearm_test")
-          )
-        )
-      ),
-      
-      # -------- EAR TAB --------
-      tabItem(tabName = "ear",
-        fluidRow(
-          box(width = 4,
-              selectInput("ear_x",
-                          "Group Variable",
-                          choices = c("Sex",
-                                      "Ageclass",
-                                      "Region",
-                                      "Reproductivestatus"))
-          ),
-          box(width = 8,
-              plotOutput("ear_plot"),
-              verbatimTextOutput("ear_test")
-          )
-        )
-      ),
-      
-      # -------- SCALING TAB --------
-      tabItem(tabName = "scaling",
-        fluidRow(
-          box(width = 12,
-              plotOutput("scaling_plot"),
-              verbatimTextOutput("scaling_test")
-          )
-        )
-      ),
-      
-      # -------- CATEGORICAL TAB --------
-      tabItem(tabName = "cat",
-        fluidRow(
-          box(width = 4,
-              selectInput("cat1",
-                          "Variable 1",
-                          choices = c("Sex",
-                                      "Ageclass",
-                                      "Region",
-                                      "Reproductivestatus")),
-              selectInput("cat2",
-                          "Variable 2",
-                          choices = c("Sex",
-                                      "Ageclass",
-                                      "Region",
-                                      "Reproductivestatus"))
-          ),
-          box(width = 8,
-              tableOutput("cat_table"),
-              verbatimTextOutput("cat_test")
-          )
-        )
-      )
-    )
-  )
+
+dashboardHeader(title="Bat Reproductive Timing"),
+
+dashboardSidebar(
+
+sidebarMenu(
+menuItem("Reproductive Timing", tabName="repro")
 )
 
-server <- function(input, output) {
-  
-  # -------- FOREARM --------
-  output$forearm_plot <- renderPlot({
-    ggplot(capture,
-           aes_string(x = input$forearm_x,
-                      y = "Forearmlengthmm",
-                      fill = input$forearm_x)) +
-      scale_fill_manual(values=project_palette)+
-      geom_boxplot() +
-      theme_minimal() +
-      labs(y = "Forearm Length (mm)")
-  })
-  
-  output$forearm_test <- renderPrint({
-    summary(aov(Forearmlengthmm ~
-                capture[[input$forearm_x]],
-                data = capture))
-  })
-  
-  # -------- EAR --------
-  output$ear_plot <- renderPlot({
-    ggplot(capture,
-           aes_string(x = input$ear_x,
-                      y = "Earlengthmm",
-                      fill = input$ear_x)) +
-      scale_fill_manual(values=project_palette)+
-      geom_boxplot() +
-      theme_minimal() +
-      labs(y = "Ear Length (mm)")
-  })
-  
-  output$ear_test <- renderPrint({
-    summary(aov(Earlengthmm ~
-                capture[[input$ear_x]],
-                data = capture))
-  })
-  
-  # -------- SCALING --------
-  output$scaling_plot <- renderPlot({
-    ggplot(capture,
-           aes(Forearmlengthmm,
-               Earlengthmm)) +
-      scale_fill_manual(values=project_palette)+
-      geom_point() +
-      geom_smooth(method = "lm",
-                  se = FALSE,
-                  color = "red") +
-      theme_minimal()
-  })
-  
-  output$scaling_test <- renderPrint({
-    summary(lm(Earlengthmm ~ Forearmlengthmm,
-               data = capture))
-  })
-  
-  # -------- CATEGORICAL --------
-  output$cat_table <- renderTable({
-    table(capture[[input$cat1]],
-          capture[[input$cat2]])
-  })
-  
-  output$cat_test <- renderPrint({
-    chisq.test(table(capture[[input$cat1]],
-                     capture[[input$cat2]]))
-  })
+),
+
+dashboardBody(
+
+tabItems(
+
+tabItem(tabName="repro",
+
+fluidRow(
+
+box(width=4,
+
+selectInput(
+"site_filter",
+"Select Site",
+choices=c("All",levels(capture$site)),
+selected="All"
+),
+
+checkboxInput(
+"adult_only",
+"Only Adult Females",
+value=TRUE
+)
+
+),
+
+box(width=8,
+
+plotOutput("repro_month_plot"),
+verbatimTextOutput("repro_summary")
+
+)
+
+),
+
+fluidRow(
+
+box(width=12,
+plotOutput("repro_site_plot"))
+
+)
+
+)
+
+)
+
+)
+
+)
+
+server <- function(input, output){
+
+filtered_data <- reactive({
+
+data <- capture
+
+if(input$adult_only){
+data <- data %>%
+filter(sex=="F", age=="Adult")
 }
 
-shinyApp(ui, server)
+if(input$site_filter!="All"){
+data <- data %>%
+filter(site==input$site_filter)
+}
+
+data
+
+})
+
+output$repro_month_plot <- renderPlot({
+
+data <- filtered_data()
+
+summary <- data %>%
+filter(!is.na(repro_status)) %>%
+group_by(month,repro_status) %>%
+summarise(count=n(),.groups="drop")
+
+ggplot(summary,
+aes(month,count,fill=repro_status))+
+
+geom_col(position="dodge")+
+
+scale_fill_brewer(palette="Dark2")+
+
+labs(
+title="Reproductive Status by Month",
+x="Month",
+y="Number of Bats",
+fill="Reproductive Status"
+)+
+
+theme_minimal()
+
+})
+
+output$repro_site_plot <- renderPlot({
+
+data <- filtered_data()
+
+summary <- data %>%
+filter(!is.na(repro_status)) %>%
+group_by(site,repro_status) %>%
+summarise(count=n(),.groups="drop")
+
+ggplot(summary,
+aes(site,count,fill=repro_status))+
+
+geom_col()+
+
+scale_fill_brewer(palette="Dark2")+
+
+labs(
+title="Reproductive Status by Site",
+x="Site",
+y="Number of Bats",
+fill="Status"
+)+
+
+theme_minimal()+
+theme(axis.text.x=element_text(angle=45,hjust=1))
+
+})
+
+output$repro_summary <- renderPrint({
+
+data <- filtered_data()
+
+summary <- data %>%
+filter(!is.na(repro_status)) %>%
+mutate(
+reproductive = repro_status %in%
+c("Pregnant","Lactating","Post-lactating")
+) %>%
+summarise(
+total_females = n(),
+reproductive_females = sum(reproductive),
+proportion_reproductive =
+reproductive_females/total_females
+)
+
+print(summary)
+
+})
+
+}
+
+shinyApp(ui,server)
 ```
 
