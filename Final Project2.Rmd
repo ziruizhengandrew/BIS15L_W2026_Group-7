@@ -40,15 +40,15 @@ capture$site <- as.factor(capture$site)
 
 ui <- dashboardPage(
   
-dashboardHeader(title = "Bat Capture Analysis"),
+dashboardHeader(title = "🦇 Bat Capture Analysis 🦇", titleWidth = 350),
 
 dashboardSidebar(
 sidebarMenu(
-menuItem("Season Analysis", tabName = "season"),
-menuItem("Sex Analysis", tabName = "sex"),
-menuItem("Region Analysis", tabName = "region"),
-menuItem("Morphological Scaling", tabName = "scaling"),
-menuItem("Capture Map", tabName = "map", icon = icon("map")))
+menuItem("Season Analysis 🍂", tabName = "season"),
+menuItem("Sex Analysis ⚧️", tabName = "sex"),
+menuItem("Region Analysis 🌎", tabName = "region"),
+menuItem("Morphological Scaling 📏", tabName = "scaling"),
+menuItem("Capture Map 📸", tabName = "map", icon = icon("map")))
 ),
 
 dashboardBody(
