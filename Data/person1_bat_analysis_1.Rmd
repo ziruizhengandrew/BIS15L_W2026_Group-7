@@ -1,0 +1,386 @@
+---
+title: "Person 1 Analysis: Acoustic Activity and Seasonal Phenology of Little Brown Bats"
+author: "Group Project - Person 1"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+#I focuses on **acoustic activity and seasonal phenology** using the acoustic dataset.
+
+## Main questions
+
+
+1. Which sites recorded the most little brown bat activity overall?
+2. When did bat activity first appear at each site?
+3. When did bat activity end at each site?
+4. How does nightly activity change across the season?
+5. Which months show the highest total activity?
+6. Which months show the highest nightly activity on average?
+7. Do site types differ in activity level?
+8. Are there clear seasonal differences across years?
+
+# Setup
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(lubridate)
+library(scales)
+library(knitr)
+```
+
+# Load data
+
+```{r load-data}
+acoustic <- read_csv("/Users/wengwenliang/desktop/BIS15L_W2026_Group-7/data/batdata/NWTMyotisAcousticRecords_ReimerBarclay2023.csv")
+glimpse(acoustic)
+```
+
+# Data cleaning
+
+```{r clean-data}
+acoustic_clean <- acoustic %>%
+  mutate(
+    night_date = mdy(night_date),
+    Site = as.factor(Site),
+    `Site type` = as.factor(`Site type`),
+    `Detector Active` = as.factor(`Detector Active`)
+  ) %>%
+  filter(`Detector Active` == "Yes") %>%
+  filter(!is.na(Myotis), !is.na(night_date)) %>%
+  mutate(
+    month = month(night_date, label = TRUE, abbr = FALSE),
+    year = year(night_date),
+    day_of_year = yday(night_date)
+  )
+
+glimpse(acoustic_clean)
+summary(acoustic_clean$Myotis)
+```
+
+## Missing-value check
+
+```{r missing-check}
+acoustic_clean %>% 
+  miss_var_summary()
+```
+
+# Summary tables
+
+## Site totals
+
+```{r site-summary}
+site_totals <- acoustic_clean %>%
+  group_by(Site, `Site type`) %>%
+  summarise(
+    total_myotis = sum(Myotis, na.rm = TRUE),
+    mean_myotis = mean(Myotis, na.rm = TRUE),
+    median_myotis = median(Myotis, na.rm = TRUE),
+    n_nights = n(),
+    .groups = "drop"
+  ) %>%
+  arrange(desc(total_myotis))
+
+site_totals %>% kable()
+```
+
+## Monthly totals
+
+```{r monthly-summary}
+monthly_summary <- acoustic_clean %>%
+  group_by(year, month) %>%
+  summarise(
+    total_myotis = sum(Myotis, na.rm = TRUE),
+    mean_myotis = mean(Myotis, na.rm = TRUE),
+    n_nights = n(),
+    .groups = "drop"
+  )
+
+monthly_summary %>% kable()
+```
+
+## Activity window table
+
+```{r activity-window-table}
+activity_window <- acoustic_clean %>%
+  filter(Myotis > 0) %>%
+  group_by(Site, `Site type`, year) %>%
+  summarise(
+    first_detection = min(night_date, na.rm = TRUE),
+    last_detection = max(night_date, na.rm = TRUE),
+    active_days_span = as.numeric(last_detection - first_detection),
+    .groups = "drop"
+  ) %>%
+  arrange(year, first_detection)
+
+activity_window %>% kable()
+```
+
+# Graph 1: Seasonal activity window by site
+
+Addresses Questions 2 and 3.
+
+```{r graph1-activity-window, fig.width=10, fig.height=6}
+ggplot(activity_window,
+       aes(y = reorder(Site, first_detection), color = `Site type`)) +
+  geom_segment(aes(x = first_detection, xend = last_detection,
+                   yend = reorder(Site, first_detection)),
+               linewidth = 1.2) +
+  geom_point(aes(x = first_detection), size = 3) +
+  geom_point(aes(x = last_detection), size = 3, shape = 17) +
+  facet_wrap(~ year, scales = "free_x") +
+  labs(
+    title = "Seasonal Activity Window by Site",
+    x = "Date",
+    y = "Site",
+    color = "Site type"
+  ) +
+  theme_minimal()
+```
+
+# Graph 2: Nightly activity through time
+
+Addresses Questions 4 and 8.
+
+```{r graph2-nightly-activity, fig.width=11, fig.height=7}
+ggplot(acoustic_clean, aes(x = night_date, y = Myotis, color = Site)) +
+  geom_line(alpha = 0.65) +
+  geom_point(size = 1.3, alpha = 0.7) +
+  facet_wrap(~ year, scales = "free_x") +
+  labs(
+    title = "Nightly Myotis Activity by Site",
+    x = "Date",
+    y = "Myotis files"
+  ) +
+  theme_minimal()
+```
+
+# Graph 3: Smoothed seasonal trend by site type
+
+Addresses Questions 4, 7, and 8.
+
+```{r graph3-smooth-trend, fig.width=10, fig.height=6}
+ggplot(acoustic_clean, aes(x = day_of_year, y = Myotis, color = `Site type`)) +
+  geom_point(alpha = 0.25) +
+  geom_smooth(se = FALSE, method = "loess") +
+  facet_wrap(~ year) +
+  labs(
+    title = "Seasonal Activity Trend by Site Type",
+    x = "Day of year",
+    y = "Myotis files",
+    color = "Site type"
+  ) +
+  theme_minimal()
+```
+
+# Graph 4: Monthly total activity
+
+Addresses Questions 5 and 8.
+
+```{r graph4-monthly-total, fig.width=10, fig.height=6}
+monthly_site <- acoustic_clean %>%
+  group_by(year, month, `Site type`) %>%
+  summarise(monthly_total = sum(Myotis, na.rm = TRUE), .groups = "drop")
+
+ggplot(monthly_site, aes(x = month, y = monthly_total, fill = `Site type`)) +
+  geom_col(position = "dodge") +
+  facet_wrap(~ year) +
+  labs(
+    title = "Monthly Bat Activity by Site Type",
+    x = "Month",
+    y = "Total Myotis files",
+    fill = "Site type"
+  ) +
+  theme_minimal()
+```
+
+# Graph 5: Ranked total activity by site
+
+Addresses Questions 1 and 7.
+
+```{r graph5-ranked-site, fig.width=10, fig.height=6}
+ggplot(site_totals,
+       aes(x = reorder(Site, total_myotis), y = total_myotis, fill = `Site type`)) +
+  geom_col() +
+  coord_flip() +
+  labs(
+    title = "Total Myotis Activity by Site",
+    x = "Site",
+    y = "Total Myotis files",
+    fill = "Site type"
+  ) +
+  theme_minimal()
+```
+
+# Interpretation guide
+
+Use the five graphs and the summary tables to answer the 8 main questions:
+
+1. Which site had the highest total activity?
+2. Which sites showed the earliest first detections?
+3. Which sites showed the latest final detections?
+4. Did activity rise and fall smoothly through the season or peak sharply?
+5. Which month had the highest total activity?
+6. Which month appears strongest on a nightly basis?
+7. Which site type seems most active overall?
+8. Do the two years show similar or different seasonal timing?
+
+# Short results paragraph draft
+
+```{r results-draft, echo=FALSE, results='asis'}
+cat("\nSeasonal acoustic data suggest that little brown bat activity was uneven across sites, months, and years. Some sites showed earlier first detections and longer activity windows than others, which suggests that site use changes across the active season. Activity also appeared to vary by site type, with some locations contributing much more total activity than others. Together, these patterns support the thesis that little brown bats at high latitude adjust seasonal timing and habitat use in response to northern environmental constraints.\n")
+```
+
+# Corresponding Shiny app
+
+
+## App features
+
+- Filter by site
+- Filter by site type
+- Filter by year
+- View a time-series plot of nightly activity
+- View a monthly bar chart
+- View a ranked site summary table
+
+## Shiny app code
+
+```{r shiny-app, eval=FALSE}
+
+acoustic <- read_csv("/Users/wengwenliang/desktop/BIS15L_W2026_Group-7/data/batdata/NWTMyotisAcousticRecords_ReimerBarclay2023.csv")
+acoustic_clean <- acoustic %>%
+  mutate(
+    night_date = mdy(night_date),
+    Site = as.character(Site),
+    `Site type` = as.character(`Site type`),
+    `Detector Active` = as.character(`Detector Active`)
+  ) %>%
+  filter(`Detector Active` == "Yes") %>%
+  filter(!is.na(Myotis), !is.na(night_date)) %>%
+  mutate(
+    month = month(night_date, label = TRUE, abbr = FALSE),
+    month = factor(as.character(month), levels = month.name),
+    year = year(night_date)
+  )
+
+ui <- fluidPage(
+  titlePanel("Little Brown Bat Acoustic Activity Explorer"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      selectInput("site", "Select Site", choices = NULL),
+      selectInput("site_type", "Select Site Type", choices = NULL),
+      selectInput("year", "Select Year", choices = NULL)
+    ),
+    
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Nightly Activity", plotOutput("time_plot", height = "450px")),
+        tabPanel("Monthly Totals", plotOutput("month_plot", height = "450px"))
+      )
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  
+  observe({
+    updateSelectInput(
+      session, "site",
+      choices = c("All", sort(unique(acoustic_clean$Site))),
+      selected = "All"
+    )
+  })
+  
+  observe({
+    df <- acoustic_clean
+    
+    if (!is.null(input$site) && input$site != "All") {
+      df <- df %>% filter(Site == input$site)
+    }
+    
+    available_types <- sort(unique(df$`Site type`))
+    
+    updateSelectInput(
+      session, "site_type",
+      choices = c("All", available_types),
+      selected = "All"
+    )
+  })
+  
+  observe({
+    df <- acoustic_clean
+    
+    if (!is.null(input$site) && input$site != "All") {
+      df <- df %>% filter(Site == input$site)
+    }
+    
+    if (!is.null(input$site_type) && input$site_type != "All") {
+      df <- df %>% filter(`Site type` == input$site_type)
+    }
+    
+    available_years <- sort(unique(df$year))
+    
+    updateSelectInput(
+      session, "year",
+      choices = c("All", available_years),
+      selected = "All"
+    )
+  })
+  
+  filtered_data <- reactive({
+    df <- acoustic_clean
+    
+    if (!is.null(input$site) && input$site != "All") {
+      df <- df %>% filter(Site == input$site)
+    }
+    
+    if (!is.null(input$site_type) && input$site_type != "All") {
+      df <- df %>% filter(`Site type` == input$site_type)
+    }
+    
+    if (!is.null(input$year) && input$year != "All") {
+      df <- df %>% filter(year == as.numeric(input$year))
+    }
+    
+    df
+  })
+  
+  output$time_plot <- renderPlot({
+    req(nrow(filtered_data()) > 0)
+    
+    ggplot(filtered_data(), aes(x = night_date, y = Myotis, color = Site, group = Site)) +
+      geom_line(alpha = 0.7) +
+      geom_point(alpha = 0.7) +
+      labs(
+        title = "Nightly Myotis Activity",
+        x = "Date",
+        y = "Myotis Files"
+      ) +
+      theme_minimal()
+  })
+  
+  output$month_plot <- renderPlot({
+    req(nrow(filtered_data()) > 0)
+    
+    month_df <- filtered_data() %>%
+      group_by(month, `Site type`) %>%
+      summarise(total_myotis = sum(Myotis, na.rm = TRUE), .groups = "drop")
+    
+    ggplot(month_df, aes(x = month, y = total_myotis, fill = `Site type`)) +
+      geom_col(position = "dodge") +
+      labs(
+        title = "Monthly Total Activity",
+        x = "Month",
+        y = "Total Myotis Files"
+      ) +
+      theme_minimal()
+  })
+}
+
+shinyApp(ui = ui, server = server)
+```
+
