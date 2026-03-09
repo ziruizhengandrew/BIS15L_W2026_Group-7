@@ -1,43 +1,31 @@
 ---
 title: "Bat Project"
-author:"Darius Arasteh"
-
+author: "Darius Arasteh"
 output: html_document
 ---
 
-#Loading Libraries
-
-
+# Load Libraries
 ```{r}
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
 library(leaflet)
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-
+library(paletteer)
 ```
 
-
-#Setting Up for Shiny App
-
 ```{r}
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-library(paletteer)
-library(leaflet)
-
 project_palette <- paletteer_d("calecopal::superbloom1")
 
 capture <- read.csv("Data/capture_cleaned.csv")
 
-# Convert grouping variables to factors
 capture$season <- as.factor(capture$season)
 capture$sex <- as.factor(capture$sex)
 capture$site <- as.factor(capture$site)
+capture$region <- as.factor(capture$region)
+```
 
+
+```{r}
 ui <- dashboardPage(
   
 dashboardHeader(title = "🦇 Bat Capture Analysis 🦇", titleWidth = 350),
@@ -48,137 +36,102 @@ menuItem("Season Analysis 🍂", tabName = "season"),
 menuItem("Sex Analysis ⚧️", tabName = "sex"),
 menuItem("Region Analysis 🌎", tabName = "region"),
 menuItem("Morphological Scaling 📏", tabName = "scaling"),
-menuItem("Capture Map 📸", tabName = "map", icon = icon("map")))
-),
+menuItem("Capture Map 📍", tabName = "map")
+)),
 
 dashboardBody(
 
 tags$head(
-  tags$style(HTML("
-    .main-header .logo {
-      background-color: #5D9D61  !important;
-      color: white !important;
-    }
-
-    .main-header .navbar {
-      background-color: #5D9D61  !important;
-    }
-  .skin-blue .sidebar-menu > li.active > a {
-    border-left-color: #5D9D61 !important;
-  }
-  .sidebar-menu > li > a:hover {
-    border-left-color: #5D9D61 !important;
-  }
-
-  "))
+tags$style(HTML("
+.main-header .logo {
+background-color: #5D9D61 !important;
+color: white !important;
+}
+.main-header .navbar {
+background-color: #5D9D61 !important;
+}
+"))
 ),
 
 tabItems(
 
-# -------- SEASON TAB --------
+# ---------------- SEASON ----------------
 tabItem(tabName = "season",
 fluidRow(
 
-box(width = 4,
-
-selectInput("season_y",
-"Variable",
-choices = c("Forearm Length"="forearm",
+box(width=4,
+selectInput("season_y","Variable",
+choices=c("Forearm Length"="forearm",
 "Ear Length"="ear",
 "Mass"="mass"))
-
 ),
 
-box(width = 8,
-
+box(width=8,
 plotOutput("season_plot"),
-verbatimTextOutput("season_text")
+verbatimTextOutput("season_text"))
+)),
 
-)
-
-)
-),
-
-# -------- SEX TAB --------
+# ---------------- SEX ----------------
 tabItem(tabName = "sex",
 fluidRow(
 
-box(width = 4,
-
-selectInput("sex_y",
-"Variable",
-choices = c("Forearm Length"="forearm",
+box(width=4,
+selectInput("sex_y","Variable",
+choices=c("Forearm Length"="forearm",
 "Ear Length"="ear",
 "Mass"="mass"))
-
 ),
 
-box(width = 8,
-
+box(width=8,
 plotOutput("sex_plot"),
-verbatimTextOutput("sex_text")
+verbatimTextOutput("sex_text"))
+)),
 
-)
-
-)
-),
-
-# -------- Region TAB --------
+# ---------------- REGION ----------------
 tabItem(tabName = "region",
 fluidRow(
 
-box(width = 4,
-
-selectInput("region_y",
-"Variable",
-choices = c("Forearm Length"="forearm",
+box(width=4,
+selectInput("region_y","Variable",
+choices=c("Forearm Length"="forearm",
 "Ear Length"="ear",
 "Mass"="mass"))
-
 ),
 
-box(width = 8,
-
+box(width=8,
 plotOutput("region_plot"),
-verbatimTextOutput("region_text")
+verbatimTextOutput("region_text"))
+)),
 
-)
-
-)
-),
-
-# -------- SCALING TAB --------
+# ---------------- SCALING ----------------
 tabItem(tabName = "scaling",
 fluidRow(
 
-box(width = 4,
+box(width=4,
 
-selectInput("x_var",
-"Body Measurement",
-choices = c("Forearm Length" = "forearm",
-"Ear Length" = "ear"))
+selectInput("x_var","X Variable",
+choices=c("Forearm Length"="forearm",
+"Ear Length"="ear")),
+
+selectInput("y_var","Y Variable",
+choices=c("Mass"="mass",
+"Ear Length"="ear",
+"Forearm Length"="forearm"))
 
 ),
 
-box(width = 8,
-
+box(width=8,
 plotOutput("scaling_plot"),
-verbatimTextOutput("scaling_text")
+verbatimTextOutput("scaling_text"))
+)),
 
-)
+# ---------------- MAP ----------------
+tabItem(tabName="map",
+fluidRow(
+box(width=12,
+leafletOutput("capture_map",height=600))
+))
 
-)
-),
-
-# -------- LEAFLET MAP TAB --------
-tabItem(tabName = "map",
-  fluidRow(
-    box(
-      width = 12,
-      leafletOutput("capture_map", height = 600)
-    )
-  )
-)
 )))
 server <- function(input, output) {
 
@@ -186,38 +139,51 @@ server <- function(input, output) {
 output$season_plot <- renderPlot({
 
 ggplot(capture,
-aes(x = season,
-y = .data[[input$season_y]],
-fill = season)) +
+aes(x=season,
+y=.data[[input$season_y]],
+fill=season))+
 
-geom_boxplot() +
+geom_boxplot(alpha=.8)+
 
-scale_fill_manual(values = project_palette) +
+scale_fill_manual(values=project_palette)+
 
-theme_minimal()
+theme_minimal()+
+labs(y=input$season_y,x="Season")
 
 })
 
 output$season_text <- renderPrint({
 
-capture %>%
-group_by(season) %>%
-summarise(mean_value =
-mean(.data[[input$season_y]], na.rm=TRUE))
+model <- aov(
+as.formula(paste(input$season_y,"~ season")),
+data=capture)
+
+result <- summary(model)
+
+print(result)
+
+p <- result[[1]][["Pr(>F)"]][1]
+
+if(p < .05){
+cat("\nSignificant seasonal differences detected (p <",p,")")
+}else{
+cat("\nNo significant seasonal differences detected (p =",p,")")
+}
 
 })
+
 
 # -------- SEX PLOT --------
 output$sex_plot <- renderPlot({
 
 ggplot(capture,
-aes(x = sex,
-y = .data[[input$sex_y]],
-fill = sex)) +
+aes(x=sex,
+y=.data[[input$sex_y]],
+fill=sex))+
 
-geom_boxplot() +
+geom_boxplot(alpha=.8)+
 
-scale_fill_manual(values = project_palette) +
+scale_fill_manual(values=project_palette)+
 
 theme_minimal()
 
@@ -225,78 +191,124 @@ theme_minimal()
 
 output$sex_text <- renderPrint({
 
-capture %>%
-group_by(sex) %>%
-summarise(mean_value =
-mean(.data[[input$sex_y]], na.rm=TRUE))
+test <- t.test(
+as.formula(paste(input$sex_y,"~ sex")),
+data=capture)
+
+print(test)
+
+if(test$p.value < .05){
+cat("\nSignificant difference between sexes.")
+}else{
+cat("\nNo significant difference between sexes.")
+}
 
 })
 
-# -------- Region PLOT --------
+
+# -------- REGION PLOT --------
 output$region_plot <- renderPlot({
 
 ggplot(capture,
-aes(x = region,
-y = .data[[input$region_y]],
-fill = region)) +
+aes(x=region,
+y=.data[[input$region_y]],
+fill=region))+
 
-geom_boxplot() +
+geom_boxplot(alpha=.8)+
 
-scale_fill_manual(values = project_palette) +
+scale_fill_manual(values=project_palette)+
 
-theme_minimal() +
-
-theme(axis.text.x =
-element_text(angle = 45, hjust = 1))
+theme_minimal()+
+theme(axis.text.x=element_text(angle=45,hjust=1))
 
 })
 
-# -------- SCALING PLOT --------
+output$region_text <- renderPrint({
+
+model <- aov(
+as.formula(paste(input$region_y,"~ region")),
+data=capture)
+
+result <- summary(model)
+
+print(result)
+
+p <- result[[1]][["Pr(>F)"]][1]
+
+if(p < .05){
+cat("\nSignificant regional differences detected.")
+}else{
+cat("\nNo significant regional differences detected.")
+}
+
+})
+
+
+# -------- SCALING --------
 output$scaling_plot <- renderPlot({
 
 ggplot(capture,
-aes(x = .data[[input$x_var]],
-y = .data[[input$y_var]])) +
+aes(x=.data[[input$x_var]],
+y=.data[[input$y_var]]))+
 
-geom_point(color = project_palette[4], alpha = 0.7) +
+geom_point(color=project_palette[4],alpha=.7,size=2)+
 
-geom_smooth(method="lm", color="black") +
+geom_smooth(method="lm",color="black",se=TRUE)+
 
-theme_minimal()
+theme_minimal()+
+
+labs(x=input$x_var,y=input$y_var)
 
 })
 
 output$scaling_text <- renderPrint({
 
-model <- lm(capture[[input$y_var]] ~ capture[[input$x_var]])
+model <- lm(
+as.formula(paste(input$y_var,"~",input$x_var)),
+data=capture)
 
-summary(model)
+summary_model <- summary(model)
+
+print(summary_model)
+
+cat("\nRegression Equation:\n")
+
+coef <- coefficients(model)
+
+cat(input$y_var,"=",
+round(coef[1],3),"+",
+round(coef[2],3),"*",input$x_var,"\n")
+
+cat("\nR-squared:",round(summary_model$r.squared,3))
 
 })
 
-# -------- LEAFLET MAP --------
+
+# -------- MAP --------
 output$capture_map <- renderLeaflet({
 
-leaflet(data = capture) |>
-  addProviderTiles(providers$CartoDB.Voyager) |>
-  
-  addCircleMarkers(
-    lng = ~lon,
-    lat = ~lat,
-    radius = 6,
-    color = project_palette[3],
-    fillOpacity = 0.8,
-    stroke = FALSE,
-    
-    popup = ~paste0(
-      "<b>Site:</b> ", site,
-      "<br><b>Season:</b> ", season,
-      "<br><b>Mass:</b> ", mass
-    )
-  )
+leaflet(data=capture) |>
+addProviderTiles(providers$CartoDB.Voyager) |>
+
+addCircleMarkers(
+lng=~lon,
+lat=~lat,
+radius=6,
+color=project_palette[3],
+fillOpacity=.8,
+stroke=FALSE,
+
+popup=~paste0(
+"<b>Site:</b> ",site,
+"<br><b>Region:</b> ",region,
+"<br><b>Season:</b> ",season,
+"<br><b>Mass:</b> ",mass
+)
+)
 
 })
-}
-shinyApp(ui, server)
-```
 
+}
+
+shinyApp(ui,server)
+```
