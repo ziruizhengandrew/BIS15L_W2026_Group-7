@@ -4,9 +4,34 @@ author: "Zirui Zheng"
 date: "2026-02-28"
 output: html_document
 ---
-
-
 ```{r}
+filtered_data <- reactive({
+  data <- capture %>%
+    mutate(
+      sex_clean = tolower(trimws(as.character(sex))),
+      age_clean = tolower(trimws(as.character(age))),
+      repro_clean = trimws(as.character(repro_status))
+    )
+
+  if (isTRUE(input$adult_only)) {
+    data <- data %>%
+      filter(
+        sex_clean %in% c("f", "female"),
+        age_clean %in% c("adult", "ad")
+      )
+  }
+
+  if (input$site_filter != "All") {
+    data <- data %>% filter(site == input$site_filter)
+  }
+
+  data
+})
+```
+
+
+
+```{r shiny-app, eval=FALSE}
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
@@ -14,7 +39,7 @@ library(tidyverse)
 capture <- read.csv("Data/capture_cleaned.csv")
 
 capture$date <- as.Date(capture$date)
-capture$month <- as.numeric(format(capture$date,"%m"))
+capture$month <- as.numeric(format(capture$date, "%m"))
 
 capture$sex <- as.factor(capture$sex)
 capture$age <- as.factor(capture$age)
@@ -22,164 +47,160 @@ capture$site <- as.factor(capture$site)
 capture$repro_status <- as.factor(capture$repro_status)
 
 ui <- dashboardPage(
-
-dashboardHeader(title="Bat Reproductive Timing"),
-
-dashboardSidebar(
-
-sidebarMenu(
-menuItem("Reproductive Timing", tabName="repro")
+  dashboardHeader(title = "Bat Reproductive Timing"),
+  
+  dashboardSidebar(
+    sidebarMenu(
+      id = "tabs",
+      menuItem("Reproductive Timing", tabName = "repro")
+    )
+  ),
+  
+  dashboardBody(
+    tabItems(
+      tabItem(
+        tabName = "repro",
+        fluidRow(
+          box(
+            width = 4,
+            selectInput(
+              "site_filter",
+              "Select Site",
+              choices = c("All", levels(capture$site)),
+              selected = "All"
+            ),
+            checkboxInput(
+              "adult_only",
+              "Only Adult Females (if available)",
+              value = TRUE
+            )
+          ),
+          
+          box(
+            width = 8,
+            status = "primary",
+            solidHeader = TRUE,
+            textOutput("filter_msg"),
+            plotOutput("repro_month_plot", height = 350),
+            verbatimTextOutput("repro_summary")
+          )
+        ),
+        
+        fluidRow(
+          box(
+            width = 12,
+            status = "primary",
+            solidHeader = TRUE,
+            plotOutput("repro_site_plot", height = 400)
+          )
+        )
+      )
+    )
+  )
 )
 
-),
-
-dashboardBody(
-
-tabItems(
-
-tabItem(tabName="repro",
-
-fluidRow(
-
-box(width=4,
-
-selectInput(
-"site_filter",
-"Select Site",
-choices=c("All",levels(capture$site)),
-selected="All"
-),
-
-checkboxInput(
-"adult_only",
-"Only Adult Females",
-value=TRUE
-)
-
-),
-
-box(width=8,
-
-plotOutput("repro_month_plot"),
-verbatimTextOutput("repro_summary")
-
-)
-
-),
-
-fluidRow(
-
-box(width=12,
-plotOutput("repro_site_plot"))
-
-)
-
-)
-
-)
-
-)
-
-)
-
-server <- function(input, output){
-
-filtered_data <- reactive({
-
-data <- capture
-
-if(input$adult_only){
-data <- data %>%
-filter(sex=="F", age=="Adult")
+server <- function(input, output, session) {
+  
+  filtered_data <- reactive({
+    df <- capture
+    
+    if (input$site_filter != "All") {
+      df <- df %>% filter(site == input$site_filter)
+    }
+    
+    # Try applying the "adult females" filter
+    if (isTRUE(input$adult_only)) {
+      df_try <- df %>% filter(sex == "F", age == "Adult")
+      
+      # If it produces 0 rows, fall back to unfiltered df
+      if (nrow(df_try) == 0) {
+        return(df)   # fallback
+      } else {
+        return(df_try)
+      }
+    }
+    
+    df
+  })
+  
+  output$filter_msg <- renderText({
+    df_base <- capture
+    if (input$site_filter != "All") df_base <- df_base %>% filter(site == input$site_filter)
+    
+    if (isTRUE(input$adult_only)) {
+      n_try <- nrow(df_base %>% filter(sex == "F", age == "Adult"))
+      if (n_try == 0) {
+        return("Note: No Adult Females exist for this selection, so the app is showing all bats instead.")
+      }
+    }
+    ""
+  })
+  
+  output$repro_month_plot <- renderPlot({
+    df <- filtered_data() %>%
+      mutate(repro_clean = trimws(as.character(repro_status)))
+    
+    validate(need(nrow(df) > 0, "No data to plot."))
+    
+    summary_df <- df %>%
+      filter(!is.na(repro_clean), repro_clean != "") %>%
+      group_by(month, repro_clean) %>%
+      summarise(count = n(), .groups = "drop")
+    
+    ggplot(summary_df, aes(x = month, y = count, fill = repro_clean)) +
+      geom_col(position = "dodge") +
+      scale_x_continuous(breaks = 1:12) +
+      labs(
+        title = "Reproductive Status by Month",
+        x = "Month",
+        y = "Number of Bats",
+        fill = "Reproductive Status"
+      ) +
+      theme_minimal()
+  })
+  
+  output$repro_site_plot <- renderPlot({
+    df <- filtered_data() %>%
+      mutate(repro_clean = trimws(as.character(repro_status)))
+    
+    validate(need(nrow(df) > 0, "No data to plot."))
+    
+    summary_df <- df %>%
+      filter(!is.na(repro_clean), repro_clean != "") %>%
+      group_by(site, repro_clean) %>%
+      summarise(count = n(), .groups = "drop")
+    
+    ggplot(summary_df, aes(x = site, y = count, fill = repro_clean)) +
+      geom_col() +
+      labs(
+        title = "Reproductive Status by Site",
+        x = "Site",
+        y = "Number of Bats",
+        fill = "Status"
+      ) +
+      theme_minimal() +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  })
+  
+  output$repro_summary <- renderPrint({
+    df <- filtered_data() %>%
+      mutate(repro_clean = trimws(as.character(repro_status)))
+    
+    validate(need(nrow(df) > 0, "No data to summarize."))
+    
+    summary_df <- df %>%
+      filter(!is.na(repro_clean), repro_clean != "") %>%
+      mutate(reproductive = repro_clean %in% c("Pregnant", "Lactating", "Post-lactating")) %>%
+      summarise(
+        total_bats = n(),
+        reproductive_bats = sum(reproductive),
+        proportion_reproductive = reproductive_bats / total_bats
+      )
+    
+    print(summary_df)
+  })
 }
 
-if(input$site_filter!="All"){
-data <- data %>%
-filter(site==input$site_filter)
-}
-
-data
-
-})
-
-output$repro_month_plot <- renderPlot({
-
-data <- filtered_data()
-
-summary <- data %>%
-filter(!is.na(repro_status)) %>%
-group_by(month,repro_status) %>%
-summarise(count=n(),.groups="drop")
-
-ggplot(summary,
-aes(month,count,fill=repro_status))+
-
-geom_col(position="dodge")+
-
-scale_fill_brewer(palette="Dark2")+
-
-labs(
-title="Reproductive Status by Month",
-x="Month",
-y="Number of Bats",
-fill="Reproductive Status"
-)+
-
-theme_minimal()
-
-})
-
-output$repro_site_plot <- renderPlot({
-
-data <- filtered_data()
-
-summary <- data %>%
-filter(!is.na(repro_status)) %>%
-group_by(site,repro_status) %>%
-summarise(count=n(),.groups="drop")
-
-ggplot(summary,
-aes(site,count,fill=repro_status))+
-
-geom_col()+
-
-scale_fill_brewer(palette="Dark2")+
-
-labs(
-title="Reproductive Status by Site",
-x="Site",
-y="Number of Bats",
-fill="Status"
-)+
-
-theme_minimal()+
-theme(axis.text.x=element_text(angle=45,hjust=1))
-
-})
-
-output$repro_summary <- renderPrint({
-
-data <- filtered_data()
-
-summary <- data %>%
-filter(!is.na(repro_status)) %>%
-mutate(
-reproductive = repro_status %in%
-c("Pregnant","Lactating","Post-lactating")
-) %>%
-summarise(
-total_females = n(),
-reproductive_females = sum(reproductive),
-proportion_reproductive =
-reproductive_females/total_females
-)
-
-print(summary)
-
-})
-
-}
-
-shinyApp(ui,server)
+shinyApp(ui, server)
 ```
 
