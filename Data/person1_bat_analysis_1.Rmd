@@ -202,7 +202,11 @@ ggplot(monthly_site, aes(x = month, y = monthly_total, fill = `Site type`)) +
     y = "Total Myotis files",
     fill = "Site type"
   ) +
-  theme_minimal()
+  scale_fill_manual(values = c( "#8E6BCB",  
+    "#F4A261",  
+    "#4DB6AC"))+
+  theme_minimal()+
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
 # Graph 5: Ranked total activity by site
@@ -220,7 +224,10 @@ ggplot(site_totals,
     y = "Total Myotis files",
     fill = "Site type"
   ) +
-  theme_minimal()
+  theme_minimal()+ 
+  scale_fill_manual(values = c( "#8E6BCB",  
+    "#F4A261",  
+    "#4DB6AC"))
 ```
 
 # Interpretation guide
