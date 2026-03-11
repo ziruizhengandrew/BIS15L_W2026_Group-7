@@ -5,6 +5,14 @@ date: "2026-02-28"
 output: html_document
 ---
 ```{r}
+
+
+library(shiny)
+library(shinydashboard)
+library(tidyverse)
+
+capture <- read.csv("../Data/capture_cleaned.csv")
+
 filtered_data <- reactive({
   data <- capture %>%
     mutate(
@@ -32,11 +40,6 @@ filtered_data <- reactive({
 
 
 ```{r shiny-app, eval=FALSE}
-library(shiny)
-library(shinydashboard)
-library(tidyverse)
-
-capture <- read.csv("Data/capture_cleaned.csv", stringsAsFactors = FALSE)
 
 capture$date <- as.Date(capture$date)
 capture$month <- as.numeric(capture$month)
@@ -46,6 +49,10 @@ capture <- capture %>%
     sex = trimws(sex),
     ageclass = trimws(ageclass),
     site = trimws(site),
+    site = case_when(
+      site %in% c("Lady Evelyn Falls campground", "Lady Evelyn Falls Campground") ~ "Lady Evelyn Falls Campground",
+      TRUE ~ site
+    ),
     repro_status = trimws(repro_status),
     repro_label = case_when(
       repro_status == "PREG" ~ "Pregnant",
@@ -63,32 +70,43 @@ ui <- dashboardPage(
   dashboardHeader(title = "🦇 Female Bat Reproductive Timing"),
   
   dashboardSidebar(
-    width = 260,
-    sidebarMenu(
-      id = "tabs",
-      menuItem("Reproductive Timing", tabName = "repro", icon = icon("chart-bar"))
+  width = 260,
+  sidebarMenu(
+    id = "tabs",
+    menuItem("Reproductive Timing", tabName = "repro", icon = icon("chart-bar"))
+  ),
+  
+  br(),
+  
+  div(
+    style = "padding: 10px;",
+    selectInput(
+      "site_filter",
+      "📍 Select Site",
+      choices = c("All", sort(unique(capture$site))),
+      selected = "All"
     ),
-    
-    br(),
-    
-    div(
-      style = "padding: 10px;",
-      selectInput(
-        "site_filter",
-        "📍 Select Site",
-        choices = c("All", sort(unique(capture$site))),
-        selected = "All"
-      ),
-      hr(),
-      p(
-        strong("About this app: "),
-        "This dashboard shows reproductive timing for adult female bats across months."
-      ),
-      p(
-        strong("Status codes: "),
-        "PREG = Pregnant, LAC = Lactating, POST = Post-lactating, NOP = Non-reproductive."
-      )
+    hr(),
+    p(
+      strong("About this app: "),
+      "This dashboard shows reproductive timing for adult female bats across months."
+    ),
+    p(
+      strong("Status codes: "),
+      "PREG = Pregnant, LAC = Lactating, POST = Post-lactating, NOP = Non-reproductive."
+    ),
+    hr(),
+    p(strong("About site names:")),
+    p(
+      "Some site names in this dataset are short field codes, such as DT11, NTBP, or SSR-1. These are labels used by researchers to identify different monitoring or capture locations."
+    ),
+    p(
+      "In general, each code refers to a specific sampling site, such as a cave, pond, campground, town area, or another field location where bats were captured or monitored."
+    ),
+    p(
+      "In this app, “site” simply means the location where the bat data were collected."
     )
+  )
   ),
   
   dashboardBody(
